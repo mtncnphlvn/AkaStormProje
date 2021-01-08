@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A00921D9-2C12-41D6-80C1-E37E93E95AE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AkaStormProje</RootNamespace>
+    <AssemblyName>AkaStormProje</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Firma\frmFirmaAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaAnasayfa.Designer.cs">
+      <DependentUpon>frmFirmaAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaProfil.Designer.cs">
+      <DependentUpon>frmFirmaProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaOyunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaOyunListele.Designer.cs">
+      <DependentUpon>frmFirmaOyunListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisEkrani\frmGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkrani\frmGirisEkrani.Designer.cs">
+      <DependentUpon>frmGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciGoruslerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciGoruslerim.Designer.cs">
+      <DependentUpon>frmKullaniciGoruslerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciKutuphane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciKutuphane.Designer.cs">
+      <DependentUpon>frmKullaniciKutuphane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciProfil.Designer.cs">
+      <DependentUpon>frmKullaniciProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciAnasayfa.Designer.cs">
+      <DependentUpon>frmKullaniciAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciKayit.Designer.cs">
+      <DependentUpon>frmKullaniciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaGiris.Designer.cs">
+      <DependentUpon>frmFirmaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmFirmaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmFirmaKayit.Designer.cs">
+      <DependentUpon>frmFirmaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciGiris.Designer.cs">
+      <DependentUpon>frmKullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmOyunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmOyunEkle.Designer.cs">
+      <DependentUpon>frmOyunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma\frmOyunlarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma\frmOyunlarim.Designer.cs">
+      <DependentUpon>frmOyunlarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmOyunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmOyunListele.Designer.cs">
+      <DependentUpon>frmOyunListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrol.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tarih.cs" />
+    <Compile Include="TextDoldur.cs" />
+    <EmbeddedResource Include="Firma\frmFirmaAnasayfa.resx">
+      <DependentUpon>frmFirmaAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaProfil.resx">
+      <DependentUpon>frmFirmaProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaOyunListele.resx">
+      <DependentUpon>frmFirmaOyunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkrani\frmGirisEkrani.resx">
+      <DependentUpon>frmGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciGoruslerim.resx">
+      <DependentUpon>frmKullaniciGoruslerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciKutuphane.resx">
+      <DependentUpon>frmKullaniciKutuphane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciProfil.resx">
+      <DependentUpon>frmKullaniciProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciAnasayfa.resx">
+      <DependentUpon>frmKullaniciAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciKayit.resx">
+      <DependentUpon>frmKullaniciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaGiris.resx">
+      <DependentUpon>frmFirmaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmFirmaKayit.resx">
+      <DependentUpon>frmFirmaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciGiris.resx">
+      <DependentUpon>frmKullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmOyunEkle.resx">
+      <DependentUpon>frmOyunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma\frmOyunlarim.resx">
+      <DependentUpon>frmOyunlarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmOyunListele.resx">
+      <DependentUpon>frmOyunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormBackgraound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnHvr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnLeave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirmaBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çarpı.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GirisEkranlari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KullaniciVeFirmaAnasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnFiltreHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KullaniciAnasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnFiltre1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OyunListeleArka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KullaniciKutuphane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisEkrani.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
