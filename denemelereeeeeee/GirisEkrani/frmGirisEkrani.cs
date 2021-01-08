@@ -16,5 +16,10 @@ namespace AkaStormProje
         {
             InitializeComponent();
         }
+
+        private void frmGirisEkrani_Load(object sender, EventArgs e)
+        {
+            //deneme;
+        }
     }
 }

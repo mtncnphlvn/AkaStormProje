@@ -88,6 +88,7 @@
             this.Name = "frmGirisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGirisEkrani";
+            this.Load += new System.EventHandler(this.frmGirisEkrani_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
