@@ -19,9 +19,7 @@ namespace AkaStormProje
 
         private void frmGirisEkrani_Load(object sender, EventArgs e)
         {
-            //deneme;
-            //<3
-            //adada
+          
         }
     }
 }
