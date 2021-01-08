@@ -21,6 +21,7 @@ namespace AkaStormProje
         {
             //deneme;
             //<3
+            //adada
         }
     }
 }
