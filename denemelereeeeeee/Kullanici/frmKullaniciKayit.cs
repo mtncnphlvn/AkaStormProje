@@ -325,5 +325,11 @@ namespace AkaStormProje
             frmGirisEkrani.Show();
             this.Hide();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSozlesme frmSozlesme = new frmSozlesme();
+            frmSozlesme.Show();
+        }
     }
 }

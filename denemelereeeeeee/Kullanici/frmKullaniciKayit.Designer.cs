@@ -52,6 +52,8 @@
             this.chxOnay = new System.Windows.Forms.CheckBox();
             this.lblChxUyari = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtAd
@@ -183,7 +185,7 @@
             this.txtSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSifre.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.ForeColor = System.Drawing.Color.Silver;
-            this.txtSifre.Location = new System.Drawing.Point(89, 444);
+            this.txtSifre.Location = new System.Drawing.Point(89, 441);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(258, 22);
             this.txtSifre.TabIndex = 10;
@@ -223,7 +225,7 @@
             this.btnKayit.Name = "btnKayit";
             this.btnKayit.Size = new System.Drawing.Size(160, 75);
             this.btnKayit.TabIndex = 12;
-            this.btnKayit.Text = "Giriş";
+            this.btnKayit.Text = "Kayıt Ol";
             this.btnKayit.UseVisualStyleBackColor = false;
             this.btnKayit.Click += new System.EventHandler(this.btnKayit_Click);
             this.btnKayit.MouseLeave += new System.EventHandler(this.btnKayit_MouseLeave);
@@ -342,7 +344,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Location = new System.Drawing.Point(439, 12);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(33, 29);
+            this.btnExit.Size = new System.Drawing.Size(33, 30);
             this.btnExit.TabIndex = 0;
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -350,12 +352,16 @@
             // chxOnay
             // 
             this.chxOnay.AutoSize = true;
-            this.chxOnay.Location = new System.Drawing.Point(218, 507);
+            this.chxOnay.BackColor = System.Drawing.Color.Transparent;
+            this.chxOnay.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chxOnay.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chxOnay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.chxOnay.Location = new System.Drawing.Point(273, 518);
             this.chxOnay.Name = "chxOnay";
-            this.chxOnay.Size = new System.Drawing.Size(145, 17);
+            this.chxOnay.Size = new System.Drawing.Size(169, 23);
             this.chxOnay.TabIndex = 13;
-            this.chxOnay.Text = "Okudum Kabul Ediyorum.";
-            this.chxOnay.UseVisualStyleBackColor = true;
+            this.chxOnay.Text = "KABUL EDİYORUM!!";
+            this.chxOnay.UseVisualStyleBackColor = false;
             this.chxOnay.CheckedChanged += new System.EventHandler(this.chxOnay_CheckedChanged);
             // 
             // lblChxUyari
@@ -364,7 +370,7 @@
             this.lblChxUyari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.lblChxUyari.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblChxUyari.ForeColor = System.Drawing.Color.Black;
-            this.lblChxUyari.Location = new System.Drawing.Point(289, 527);
+            this.lblChxUyari.Location = new System.Drawing.Point(308, 559);
             this.lblChxUyari.Name = "lblChxUyari";
             this.lblChxUyari.Size = new System.Drawing.Size(0, 19);
             this.lblChxUyari.TabIndex = 9;
@@ -386,6 +392,33 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.label1.Location = new System.Drawing.Point(40, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(354, 62);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Kullanıcı Kayıt";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.linkLabel1.Location = new System.Drawing.Point(12, 517);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(263, 21);
+            this.linkLabel1.TabIndex = 17;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Kullanıcı Sözleşmesini Okudum..";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // frmKullaniciKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,6 +426,8 @@
             this.BackgroundImage = global::AkaStormProje.Properties.Resources.FormBackgraound;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 661);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.chxOnay);
             this.Controls.Add(this.btnExit);
@@ -457,5 +492,7 @@
         private System.Windows.Forms.CheckBox chxOnay;
         private System.Windows.Forms.Label lblChxUyari;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

@@ -73,6 +73,12 @@ namespace AkaStormProje
             Match Eslesme = Regex.Match(Telefon, RegexDesen, RegexOptions.IgnoreCase);
             return Eslesme.Success; // bool değer döner
         }
+        public bool TelefonFormatKontrolFirma(string Telefon)
+        {
+            string RegexDesen = @"^(0(\d{10}))$";
+            Match Eslesme = Regex.Match(Telefon, RegexDesen, RegexOptions.IgnoreCase);
+            return Eslesme.Success; // bool değer döner
+        }
         //------------------------------------------------------------E-POSTA KONTROL --------------------------------------------------------------------------
         public static bool epostaTest(string eposta)
         {

@@ -110,7 +110,7 @@ namespace AkaStormProje
         private void txtTelefonNo_TextChanged(object sender, EventArgs e)
         {
             kontrol.KarakterKontrol(txtTelefonNo, 0, 11, lblTelefonUyari);
-            if (txtTelefonNo.TextLength == 11 && kontrol.TelefonFormatKontrol(txtTelefonNo.Text) == false)
+            if (txtTelefonNo.TextLength == 11 && kontrol.TelefonFormatKontrolFirma(txtTelefonNo.Text) == false)
             {
                 lblTelefonUyari.Text = "Geçersiz Numara";
             }
@@ -173,7 +173,7 @@ namespace AkaStormProje
                 }
             }
             //txtTelefonNo---------------------------------------------------------------------------------------------
-            else if (kontrol.TelefonFormatKontrol(txtTelefonNo.Text) == false || txtTelefonNo.Text == "Telefon Numarası")
+            else if (kontrol.TelefonFormatKontrolFirma(txtTelefonNo.Text) == false || txtTelefonNo.Text == "Telefon Numarası")
             {
                 lblTelefonUyari.Text = "Geçersiz Numara";
                 if (string.IsNullOrEmpty(txtTelefonNo.Text) || txtTelefonNo.Text == "Telefon Numarası")
@@ -222,6 +222,19 @@ namespace AkaStormProje
             {
                 lblChxUyari.Text = "";
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSozlesme frmSozlesme = new frmSozlesme();
+            frmSozlesme.Show();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmGirisEkrani frmGirisEkrani = new frmGirisEkrani();
+            frmGirisEkrani.Show();
+            this.Hide();
         }
     }
 }

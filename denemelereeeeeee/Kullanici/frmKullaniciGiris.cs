@@ -97,5 +97,12 @@ namespace AkaStormProje
         {
             btnGiris.BackgroundImage = Properties.Resources.BtnLeave;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmGirisEkrani frmGirisEkrani = new frmGirisEkrani();
+            frmGirisEkrani.Show();
+            this.Hide();
+        }
     }
 }
