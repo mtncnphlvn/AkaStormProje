@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKullaniciKayit));
             this.txtAd = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.cmbGun = new System.Windows.Forms.ComboBox();
@@ -52,6 +51,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.chxOnay = new System.Windows.Forms.CheckBox();
             this.lblChxUyari = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtAd
@@ -183,7 +183,7 @@
             this.txtSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSifre.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.ForeColor = System.Drawing.Color.Silver;
-            this.txtSifre.Location = new System.Drawing.Point(89, 444);
+            this.txtSifre.Location = new System.Drawing.Point(88, 441);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(258, 22);
             this.txtSifre.TabIndex = 10;
@@ -198,7 +198,7 @@
             this.txtSifreTekrar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSifreTekrar.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifreTekrar.ForeColor = System.Drawing.Color.Silver;
-            this.txtSifreTekrar.Location = new System.Drawing.Point(89, 479);
+            this.txtSifreTekrar.Location = new System.Drawing.Point(89, 475);
             this.txtSifreTekrar.Name = "txtSifreTekrar";
             this.txtSifreTekrar.Size = new System.Drawing.Size(258, 22);
             this.txtSifreTekrar.TabIndex = 11;
@@ -335,7 +335,11 @@
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BackgroundImage = global::AkaStormProje.Properties.Resources.çarpı;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Location = new System.Drawing.Point(439, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(33, 29);
@@ -365,13 +369,31 @@
             this.lblChxUyari.Size = new System.Drawing.Size(0, 19);
             this.lblChxUyari.TabIndex = 9;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = global::AkaStormProje.Properties.Resources.BackLeave;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(63, 32);
+            this.btnBack.TabIndex = 14;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmKullaniciKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::AkaStormProje.Properties.Resources.FormBackgraound;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 661);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.chxOnay);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.cmbCinsiyet);
@@ -434,5 +456,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.CheckBox chxOnay;
         private System.Windows.Forms.Label lblChxUyari;
+        private System.Windows.Forms.Button btnBack;
     }
 }

@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="KullaniciVeFirmaAnasayfa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KullaniciVeFirmaAnasayfa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OyunListeleArka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OyunListeleArka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnFiltreHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnFiltreHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="girisEkrani" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\girisEkrani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BtnHvr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnHvr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,17 +130,23 @@
   <data name="btnFiltre1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnFiltre1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KullaniciKutuphane" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KullaniciKutuphane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnFiltreHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnFiltreHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FormBackgraound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FormBackgraound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OyunListeleArka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OyunListeleArka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GirisEkranlari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GirisEkranlari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="çarpı" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\çarpı.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KullaniciVeFirmaAnasayfa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KullaniciVeFirmaAnasayfa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KullaniciKutuphane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KullaniciKutuphane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BtnLeave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnLeave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,10 +154,10 @@
   <data name="FirmaBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FirmaBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GirisEkranlari" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GirisEkranlari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FormBackgraound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormBackgraound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="girisEkrani" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\girisEkrani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BackLeave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackLeave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

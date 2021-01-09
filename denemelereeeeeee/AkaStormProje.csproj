@@ -248,5 +248,11 @@
   <ItemGroup>
     <None Include="Resources\girisEkrani.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackLeave.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

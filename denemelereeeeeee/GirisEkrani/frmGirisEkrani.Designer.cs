@@ -148,10 +148,14 @@
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BackgroundImage = global::AkaStormProje.Properties.Resources.çarpı;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Location = new System.Drawing.Point(605, 12);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(33, 29);
+            this.btnExit.Size = new System.Drawing.Size(33, 30);
             this.btnExit.TabIndex = 8;
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);

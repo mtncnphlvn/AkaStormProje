@@ -308,18 +308,22 @@ namespace AkaStormProje
         {
             btnKayit.BackgroundImage = Properties.Resources.BtnHvr;
         }
-
         private void btnKayit_MouseLeave(object sender, EventArgs e)
         {
             btnKayit.BackgroundImage = Properties.Resources.BtnLeave;
         }
-
         private void chxOnay_CheckedChanged(object sender, EventArgs e)
         {
             if(chxOnay.Checked == true)
             {
                 lblChxUyari.Text = "";
             }
+        }
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmGirisEkrani frmGirisEkrani = new frmGirisEkrani();
+            frmGirisEkrani.Show();
+            this.Hide();
         }
     }
 }

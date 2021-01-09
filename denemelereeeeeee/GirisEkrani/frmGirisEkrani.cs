@@ -25,18 +25,18 @@ namespace AkaStormProje
             mouse_x = e.X;
             mouse_y = e.Y;
         }
-
         private void frmGirisEkrani_MouseMove(object sender, MouseEventArgs e)
         {
             if (move)
             {
                 this.SetDesktopLocation(MousePosition.X - mouse_x, MousePosition.Y - mouse_y);
             }
-        }        private void frmGirisEkrani_MouseUp(object sender, MouseEventArgs e)
+        }        
+        private void frmGirisEkrani_MouseUp(object sender, MouseEventArgs e)
         {
-            move = false;
+                     move = false;
         }
-        //---------------------formload------------------------------
+        //---------------------formload--------------------------------------------
         private void frmGirisEkrani_Load(object sender, EventArgs e)
         {
           
