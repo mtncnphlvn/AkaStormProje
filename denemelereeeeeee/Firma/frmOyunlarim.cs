@@ -16,5 +16,13 @@ namespace AkaStormProje
         {
             InitializeComponent();
         }
+        private void btnGüncelle_MouseHover(object sender, EventArgs e)
+        {
+            btnGüncelle.BackgroundImage = Properties.Resources.BtnHvr;
+        }
+        private void btnGüncelle_MouseLeave(object sender, EventArgs e)
+        {
+            btnGüncelle.BackgroundImage = Properties.Resources.BtnLeave;
+        }
     }
 }

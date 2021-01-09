@@ -18,10 +18,21 @@ namespace AkaStormProje
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnEkle_MouseHover(object sender, EventArgs e)
+        {
+            btnEkle.BackgroundImage = Properties.Resources.BtnHvr;
+        }
+        private void btnEkle_MouseLeave(object sender, EventArgs e)
+        {
+            btnEkle.BackgroundImage = Properties.Resources.BtnLeave;
         }
     }
 }

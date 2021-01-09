@@ -45,6 +45,7 @@
             this.panSol = new System.Windows.Forms.Panel();
             this.txtAdFiltre = new System.Windows.Forms.TextBox();
             this.panFiltre = new System.Windows.Forms.Panel();
+            this.btnFiltreExit = new System.Windows.Forms.Button();
             this.btnFiltre2 = new System.Windows.Forms.Button();
             this.cmbFiyat2 = new System.Windows.Forms.ComboBox();
             this.cmbFiyat1 = new System.Windows.Forms.ComboBox();
@@ -65,8 +66,6 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnFiltreExit = new System.Windows.Forms.Button();
             this.panSag.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOyunResim)).BeginInit();
             this.panSol.SuspendLayout();
@@ -98,70 +97,70 @@
             // lblFiyat
             // 
             this.lblFiyat.AutoSize = true;
-            this.lblFiyat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblFiyat.Location = new System.Drawing.Point(101, 531);
+            this.lblFiyat.Font = new System.Drawing.Font("Segoe UI Black", 9F);
+            this.lblFiyat.Location = new System.Drawing.Point(114, 540);
             this.lblFiyat.Name = "lblFiyat";
-            this.lblFiyat.Size = new System.Drawing.Size(48, 15);
+            this.lblFiyat.Size = new System.Drawing.Size(50, 15);
             this.lblFiyat.TabIndex = 29;
             this.lblFiyat.Text = "label10";
             // 
             // lblPuan
             // 
             this.lblPuan.AutoSize = true;
-            this.lblPuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPuan.Location = new System.Drawing.Point(101, 506);
+            this.lblPuan.Font = new System.Drawing.Font("Segoe UI Black", 9F);
+            this.lblPuan.Location = new System.Drawing.Point(114, 512);
             this.lblPuan.Name = "lblPuan";
-            this.lblPuan.Size = new System.Drawing.Size(41, 15);
+            this.lblPuan.Size = new System.Drawing.Size(44, 15);
             this.lblPuan.TabIndex = 28;
             this.lblPuan.Text = "label9";
             // 
             // lblKategori
             // 
             this.lblKategori.AutoSize = true;
-            this.lblKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKategori.Location = new System.Drawing.Point(101, 423);
+            this.lblKategori.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKategori.Location = new System.Drawing.Point(114, 423);
             this.lblKategori.Name = "lblKategori";
-            this.lblKategori.Size = new System.Drawing.Size(41, 15);
+            this.lblKategori.Size = new System.Drawing.Size(44, 15);
             this.lblKategori.TabIndex = 20;
             this.lblKategori.Text = "label3";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(49, 531);
+            this.label6.Font = new System.Drawing.Font("Segoe Print", 12F);
+            this.label6.Location = new System.Drawing.Point(45, 533);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.Size = new System.Drawing.Size(63, 28);
             this.label6.TabIndex = 24;
             this.label6.Text = "Fiyat :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(26, 421);
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(17, 416);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(91, 28);
             this.label2.TabIndex = 19;
             this.label2.Text = "Kategori :";
             // 
             // lblYil
             // 
             this.lblYil.AutoSize = true;
-            this.lblYil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblYil.Location = new System.Drawing.Point(101, 479);
+            this.lblYil.Font = new System.Drawing.Font("Segoe UI Black", 9F);
+            this.lblYil.Location = new System.Drawing.Point(114, 484);
             this.lblYil.Name = "lblYil";
-            this.lblYil.Size = new System.Drawing.Size(41, 15);
+            this.lblYil.Size = new System.Drawing.Size(44, 15);
             this.lblYil.TabIndex = 27;
             this.lblYil.Text = "label8";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(46, 504);
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 12F);
+            this.label4.Location = new System.Drawing.Point(44, 505);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
+            this.label4.Size = new System.Drawing.Size(64, 28);
             this.label4.TabIndex = 22;
             this.label4.Text = "Puan :";
             // 
@@ -169,10 +168,10 @@
             // 
             this.txtKonu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.txtKonu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKonu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKonu.Location = new System.Drawing.Point(39, 333);
+            this.txtKonu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKonu.Location = new System.Drawing.Point(39, 327);
             this.txtKonu.Name = "txtKonu";
-            this.txtKonu.Size = new System.Drawing.Size(189, 75);
+            this.txtKonu.Size = new System.Drawing.Size(189, 86);
             this.txtKonu.TabIndex = 18;
             this.txtKonu.Text = "Konu : Mükemmel bir savaş Simulasyonu";
             // 
@@ -183,17 +182,17 @@
             this.txtOyunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOyunAdi.Location = new System.Drawing.Point(39, 225);
             this.txtOyunAdi.Name = "txtOyunAdi";
-            this.txtOyunAdi.Size = new System.Drawing.Size(189, 105);
+            this.txtOyunAdi.Size = new System.Drawing.Size(189, 96);
             this.txtOyunAdi.TabIndex = 17;
             this.txtOyunAdi.Text = "           Arma 3";
             // 
             // lblGelistirici
             // 
             this.lblGelistirici.AutoSize = true;
-            this.lblGelistirici.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblGelistirici.Location = new System.Drawing.Point(101, 451);
+            this.lblGelistirici.Font = new System.Drawing.Font("Segoe UI Black", 9F);
+            this.lblGelistirici.Location = new System.Drawing.Point(114, 456);
             this.lblGelistirici.Name = "lblGelistirici";
-            this.lblGelistirici.Size = new System.Drawing.Size(41, 15);
+            this.lblGelistirici.Size = new System.Drawing.Size(44, 15);
             this.lblGelistirici.TabIndex = 26;
             this.lblGelistirici.Text = "label7";
             // 
@@ -209,20 +208,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.label5.Location = new System.Drawing.Point(64, 477);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 17);
+            this.label5.Size = new System.Drawing.Size(44, 28);
             this.label5.TabIndex = 23;
             this.label5.Text = "Yıl :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(22, 449);
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(9, 449);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 17);
+            this.label3.Size = new System.Drawing.Size(99, 28);
             this.label3.TabIndex = 21;
             this.label3.Text = "Geliştirici :";
             // 
@@ -234,7 +233,6 @@
             this.panSol.Controls.Add(this.panFiltre);
             this.panSol.Controls.Add(this.btnFiltre);
             this.panSol.Controls.Add(this.dataGridView1);
-            this.panSol.Controls.Add(this.label1);
             this.panSol.Location = new System.Drawing.Point(0, 0);
             this.panSol.Name = "panSol";
             this.panSol.Size = new System.Drawing.Size(950, 650);
@@ -244,11 +242,11 @@
             // 
             this.txtAdFiltre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.txtAdFiltre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAdFiltre.Font = new System.Drawing.Font("Segoe UI Black", 11F);
+            this.txtAdFiltre.Font = new System.Drawing.Font("Segoe UI Black", 12F);
             this.txtAdFiltre.ForeColor = System.Drawing.Color.Silver;
-            this.txtAdFiltre.Location = new System.Drawing.Point(79, 160);
+            this.txtAdFiltre.Location = new System.Drawing.Point(80, 159);
             this.txtAdFiltre.Name = "txtAdFiltre";
-            this.txtAdFiltre.Size = new System.Drawing.Size(226, 20);
+            this.txtAdFiltre.Size = new System.Drawing.Size(226, 22);
             this.txtAdFiltre.TabIndex = 5;
             this.txtAdFiltre.Text = "İsme göre ara";
             this.txtAdFiltre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -275,6 +273,23 @@
             this.panFiltre.Size = new System.Drawing.Size(363, 133);
             this.panFiltre.TabIndex = 4;
             // 
+            // btnFiltreExit
+            // 
+            this.btnFiltreExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnFiltreExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnFiltreExit.FlatAppearance.BorderSize = 0;
+            this.btnFiltreExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnFiltreExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnFiltreExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltreExit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFiltreExit.Location = new System.Drawing.Point(343, 1);
+            this.btnFiltreExit.Name = "btnFiltreExit";
+            this.btnFiltreExit.Size = new System.Drawing.Size(18, 23);
+            this.btnFiltreExit.TabIndex = 11;
+            this.btnFiltreExit.Text = "X";
+            this.btnFiltreExit.UseVisualStyleBackColor = false;
+            this.btnFiltreExit.Click += new System.EventHandler(this.btnFiltreExit_Click);
+            // 
             // btnFiltre2
             // 
             this.btnFiltre2.BackgroundImage = global::AkaStormProje.Properties.Resources.btnFiltre1;
@@ -284,12 +299,13 @@
             this.btnFiltre2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnFiltre2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnFiltre2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltre2.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFiltre2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnFiltre2.Location = new System.Drawing.Point(233, 95);
             this.btnFiltre2.Name = "btnFiltre2";
             this.btnFiltre2.Size = new System.Drawing.Size(89, 34);
             this.btnFiltre2.TabIndex = 4;
             this.btnFiltre2.Text = "Filtrele";
+            this.btnFiltre2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFiltre2.UseVisualStyleBackColor = true;
             this.btnFiltre2.MouseLeave += new System.EventHandler(this.btnFiltre2_MouseLeave);
             this.btnFiltre2.MouseHover += new System.EventHandler(this.btnFiltre2_MouseHover);
@@ -343,9 +359,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(171, 66);
+            this.label10.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(158, 63);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 13);
+            this.label10.Size = new System.Drawing.Size(49, 21);
             this.label10.TabIndex = 2;
             this.label10.Text = "Fiyat :";
             // 
@@ -362,18 +379,20 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(179, 30);
+            this.label8.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(173, 26);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 13);
+            this.label8.Size = new System.Drawing.Size(33, 21);
             this.label8.TabIndex = 2;
             this.label8.Text = "Yıl :";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 50);
+            this.label7.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(3, 50);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(50, 21);
             this.label7.TabIndex = 1;
             this.label7.Text = "Filtre :";
             // 
@@ -390,7 +409,7 @@
             "Yıl (En Eski)",
             "Puan (En Yüksek)",
             "Puan (En Düşük)"});
-            this.cmbGenel.Location = new System.Drawing.Point(55, 47);
+            this.cmbGenel.Location = new System.Drawing.Point(59, 50);
             this.cmbGenel.Name = "cmbGenel";
             this.cmbGenel.Size = new System.Drawing.Size(93, 21);
             this.cmbGenel.TabIndex = 0;
@@ -404,12 +423,13 @@
             this.btnFiltre.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltre.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold);
+            this.btnFiltre.Font = new System.Drawing.Font("Segoe Print", 13F, System.Drawing.FontStyle.Bold);
             this.btnFiltre.Location = new System.Drawing.Point(786, 140);
             this.btnFiltre.Name = "btnFiltre";
             this.btnFiltre.Size = new System.Drawing.Size(96, 44);
             this.btnFiltre.TabIndex = 3;
             this.btnFiltre.Text = "Filtrele";
+            this.btnFiltre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFiltre.UseVisualStyleBackColor = true;
             this.btnFiltre.Click += new System.EventHandler(this.btnFiltre_Click);
             this.btnFiltre.MouseLeave += new System.EventHandler(this.btnFiltre_MouseLeave);
@@ -469,33 +489,6 @@
             this.Column7.HeaderText = "Çıktığı Yıl";
             this.Column7.Name = "Column7";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(21, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Firma Oyun Listele";
-            // 
-            // btnFiltreExit
-            // 
-            this.btnFiltreExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.btnFiltreExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.btnFiltreExit.FlatAppearance.BorderSize = 0;
-            this.btnFiltreExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.btnFiltreExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.btnFiltreExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltreExit.Location = new System.Drawing.Point(342, 1);
-            this.btnFiltreExit.Name = "btnFiltreExit";
-            this.btnFiltreExit.Size = new System.Drawing.Size(18, 23);
-            this.btnFiltreExit.TabIndex = 11;
-            this.btnFiltreExit.Text = "X";
-            this.btnFiltreExit.UseVisualStyleBackColor = false;
-            this.btnFiltreExit.Click += new System.EventHandler(this.btnFiltreExit_Click);
-            // 
             // frmFirmaOyunListele
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -534,7 +527,6 @@
         private System.Windows.Forms.PictureBox pbOyunResim;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panSol;
         private System.Windows.Forms.Button btnFiltre;

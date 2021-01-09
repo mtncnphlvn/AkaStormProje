@@ -263,5 +263,29 @@
   <ItemGroup>
     <None Include="Resources\BackLeave.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Commit1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

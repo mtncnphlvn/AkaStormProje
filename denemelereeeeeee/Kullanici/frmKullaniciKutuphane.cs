@@ -59,6 +59,5 @@ namespace AkaStormProje
         {
             panFiltre.Visible = false;
         }
-
     }
 }
