@@ -184,7 +184,6 @@ namespace AkaStormProje
         {
             textDoldur.SifreEnter(txtSifre,"Şifre (En az 8 Haneli)");
         }
-
         private void txtSifre_Leave(object sender, EventArgs e)
         {
             textDoldur.SifreLeave(txtSifre,"Şifre (En az 8 Haneli)");
