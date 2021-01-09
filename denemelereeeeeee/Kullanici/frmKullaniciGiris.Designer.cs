@@ -35,6 +35,7 @@ namespace AkaStormProje
             this.lblKullaniciAdiUyari = new System.Windows.Forms.Label();
             this.lblSifreUyari = new System.Windows.Forms.Label();
             this.btnGiris = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnExit
@@ -123,6 +124,18 @@ namespace AkaStormProje
             this.btnGiris.MouseLeave += new System.EventHandler(this.btnGiris_MouseLeave);
             this.btnGiris.MouseHover += new System.EventHandler(this.btnGiris_MouseHover);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.label1.Location = new System.Drawing.Point(140, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(246, 46);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Kullanıcı Giriş";
+            // 
             // frmKullaniciGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,6 +143,7 @@ namespace AkaStormProje
             this.BackgroundImage = global::AkaStormProje.Properties.Resources.GirisEkranlari;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(570, 420);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.lblSifreUyari);
             this.Controls.Add(this.lblKullaniciAdiUyari);
@@ -157,5 +171,6 @@ namespace AkaStormProje
         private System.Windows.Forms.Label lblKullaniciAdiUyari;
         private System.Windows.Forms.Label lblSifreUyari;
         private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.Label label1;
     }
 }

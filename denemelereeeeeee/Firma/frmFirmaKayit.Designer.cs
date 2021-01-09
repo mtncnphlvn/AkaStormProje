@@ -44,6 +44,7 @@ namespace AkaStormProje
             this.btnKayit = new System.Windows.Forms.Button();
             this.chxOnay = new System.Windows.Forms.CheckBox();
             this.lblChxUyari = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnExit
@@ -252,6 +253,18 @@ namespace AkaStormProje
             this.lblChxUyari.Size = new System.Drawing.Size(0, 19);
             this.lblChxUyari.TabIndex = 11;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.label1.Location = new System.Drawing.Point(114, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 46);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Firma Kayıt";
+            // 
             // frmFirmaKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,6 +272,7 @@ namespace AkaStormProje
             this.BackgroundImage = global::AkaStormProje.Properties.Resources.FirmaBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 661);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.chxOnay);
             this.Controls.Add(this.btnKayit);
             this.Controls.Add(this.lblChxUyari);
@@ -304,5 +318,6 @@ namespace AkaStormProje
         private System.Windows.Forms.Button btnKayit;
         private System.Windows.Forms.CheckBox chxOnay;
         private System.Windows.Forms.Label lblChxUyari;
+        private System.Windows.Forms.Label label1;
     }
 }
