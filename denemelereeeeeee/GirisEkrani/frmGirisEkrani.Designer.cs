@@ -65,6 +65,7 @@
             this.btnGiris.TabIndex = 3;
             this.btnGiris.Text = "GİRİŞ";
             this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             this.btnGiris.MouseLeave += new System.EventHandler(this.btnGiris_MouseLeave);
             this.btnGiris.MouseHover += new System.EventHandler(this.btnGiris_MouseHover);
             // 
@@ -85,6 +86,7 @@
             this.btnKayit.TabIndex = 4;
             this.btnKayit.Text = "KAYIT OL";
             this.btnKayit.UseVisualStyleBackColor = true;
+            this.btnKayit.Click += new System.EventHandler(this.btnKayit_Click);
             this.btnKayit.MouseLeave += new System.EventHandler(this.btnKayit_MouseLeave);
             this.btnKayit.MouseHover += new System.EventHandler(this.btnKayit_MouseHover);
             // 
@@ -116,6 +118,7 @@
             this.btnFGiris.TabIndex = 6;
             this.btnFGiris.Text = "GİRİŞ";
             this.btnFGiris.UseVisualStyleBackColor = true;
+            this.btnFGiris.Click += new System.EventHandler(this.btnFGiris_Click);
             this.btnFGiris.MouseLeave += new System.EventHandler(this.btnFGiris_MouseLeave);
             this.btnFGiris.MouseHover += new System.EventHandler(this.btnFGiris_MouseHover);
             // 
@@ -136,6 +139,7 @@
             this.btnFKayit.TabIndex = 7;
             this.btnFKayit.Text = "KAYIT OL";
             this.btnFKayit.UseVisualStyleBackColor = true;
+            this.btnFKayit.Click += new System.EventHandler(this.btnFKayit_Click);
             this.btnFKayit.MouseLeave += new System.EventHandler(this.btnFKayit_MouseLeave);
             this.btnFKayit.MouseHover += new System.EventHandler(this.btnFKayit_MouseHover);
             // 
