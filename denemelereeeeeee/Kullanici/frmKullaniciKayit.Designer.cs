@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKullaniciKayit));
             this.txtAd = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.cmbGun = new System.Windows.Forms.ComboBox();
@@ -166,7 +165,7 @@
             this.txtKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKullaniciAdi.ForeColor = System.Drawing.Color.Silver;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(89, 408);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(89, 407);
             this.txtKullaniciAdi.MaxLength = 10;
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(258, 22);
@@ -183,7 +182,7 @@
             this.txtSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSifre.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.ForeColor = System.Drawing.Color.Silver;
-            this.txtSifre.Location = new System.Drawing.Point(89, 444);
+            this.txtSifre.Location = new System.Drawing.Point(89, 440);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(258, 22);
             this.txtSifre.TabIndex = 10;
@@ -198,7 +197,7 @@
             this.txtSifreTekrar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSifreTekrar.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifreTekrar.ForeColor = System.Drawing.Color.Silver;
-            this.txtSifreTekrar.Location = new System.Drawing.Point(89, 479);
+            this.txtSifreTekrar.Location = new System.Drawing.Point(89, 475);
             this.txtSifreTekrar.Name = "txtSifreTekrar";
             this.txtSifreTekrar.Size = new System.Drawing.Size(258, 22);
             this.txtSifreTekrar.TabIndex = 11;
@@ -259,7 +258,7 @@
             this.cmbCinsiyet.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbCinsiyet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
             this.cmbCinsiyet.FormattingEnabled = true;
-            this.cmbCinsiyet.Location = new System.Drawing.Point(87, 306);
+            this.cmbCinsiyet.Location = new System.Drawing.Point(88, 306);
             this.cmbCinsiyet.Name = "cmbCinsiyet";
             this.cmbCinsiyet.Size = new System.Drawing.Size(258, 23);
             this.cmbCinsiyet.TabIndex = 6;
@@ -369,7 +368,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::AkaStormProje.Properties.Resources.FormBackgraound;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 661);
             this.Controls.Add(this.chxOnay);
