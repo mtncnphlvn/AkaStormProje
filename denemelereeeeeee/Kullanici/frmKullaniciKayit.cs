@@ -57,7 +57,6 @@ namespace AkaStormProje
             cmbAy.ForeColor = Color.Silver;
             cmbYil.ForeColor = Color.Silver;
             cmbCinsiyet.ForeColor = Color.Silver;
-
         }
         //----------------------------------------------- cmbGun_SelectedIndexChanged ---------------------------------
         private void cmbGun_SelectedIndexChanged(object sender, EventArgs e)
@@ -72,14 +71,12 @@ namespace AkaStormProje
             lblTarihUyari.Text = "";
             tarih.Gun(cmbGun, cmbAy); // Ay'a göre gün listeler
             tarih.TarihRenk(cmbAy);
-
         }
         //----------------------------------------------- cmbYıl_SelectedIndexChanged ---------------------------------
         private void cmbYil_SelectedIndexChanged(object sender, EventArgs e)
         {
             lblTarihUyari.Text = "";
             tarih.TarihRenk(cmbYil);
-
         }
         //----------------------------------------------- cmbCinsiyet_SelectedIndexChanged ----------------------------
         private void cmbCinsiyet_SelectedIndexChanged(object sender, EventArgs e)
