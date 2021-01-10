@@ -83,7 +83,21 @@ namespace AkaStormProje
             }
             else
             {
-                Console.WriteLine("Kayıt Olundu");
+
+                Firma firma = new Firma();
+                FirmaYonetici firmaYonetici = new FirmaYonetici();
+
+                firma.getFirmaEposta = txtEposta.Text;
+                firma.getFirmaSifre = txtSifre.Text;
+
+                if (firmaYonetici.Giris(firma) == true)
+                {
+                    frmFirmaAnasayfa frmFirmaAnasayfa = new frmFirmaAnasayfa();
+                    frmFirmaAnasayfa.Show();
+                    this.Hide();
+                }
+
+
             }
         }
         //---------------------btnExit---------------------

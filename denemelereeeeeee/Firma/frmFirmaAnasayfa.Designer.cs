@@ -205,9 +205,9 @@
             // lblKullaniciAdi
             // 
             this.lblKullaniciAdi.AutoSize = true;
-            this.lblKullaniciAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.lblKullaniciAdi.BackColor = System.Drawing.Color.Transparent;
             this.lblKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(250, 70);
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(243, 70);
             this.lblKullaniciAdi.Name = "lblKullaniciAdi";
             this.lblKullaniciAdi.Size = new System.Drawing.Size(44, 15);
             this.lblKullaniciAdi.TabIndex = 3;
@@ -253,7 +253,7 @@
             this.lblTarih.AutoSize = true;
             this.lblTarih.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.lblTarih.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTarih.Location = new System.Drawing.Point(403, 31);
+            this.lblTarih.Location = new System.Drawing.Point(394, 31);
             this.lblTarih.Name = "lblTarih";
             this.lblTarih.Size = new System.Drawing.Size(44, 15);
             this.lblTarih.TabIndex = 4;
@@ -275,7 +275,7 @@
             this.lblBakiye.AutoSize = true;
             this.lblBakiye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.lblBakiye.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBakiye.Location = new System.Drawing.Point(405, 108);
+            this.lblBakiye.Location = new System.Drawing.Point(402, 108);
             this.lblBakiye.Name = "lblBakiye";
             this.lblBakiye.Size = new System.Drawing.Size(44, 15);
             this.lblBakiye.TabIndex = 5;

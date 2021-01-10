@@ -82,5 +82,93 @@ namespace AkaStormProje
             myRgbColor = Color.FromArgb(50, 100, 150);
             comboBox.ForeColor = myRgbColor;
         }
+
+        public string AyCevirme(string ay)
+        {
+            string  aySayi = "";
+            
+            switch (ay)
+            {
+                case "Ocak":
+                    aySayi = "01";
+                    break;
+                case "Şubat":
+                    aySayi = "02";
+                    break;
+                case "Mart":
+                    aySayi = "03";
+                    break;
+                case "Nisan":
+                    aySayi = "04";
+                    break;
+                case "Mayıs":
+                    aySayi = "05";
+                    break;
+                case "Haziran":
+                    aySayi = "06";
+                    break;
+                case "Temmuz":
+                    aySayi = "07";
+                    break;
+                case "Ağustos":
+                    aySayi = "08";
+                    break;
+                case "Eylül":
+                    aySayi = "09";
+                    break;
+                case "Ekim":
+                    aySayi = "10";
+                    break;
+                case "Kasım":
+                    aySayi = "11";
+                    break;
+                case "Aralık":
+                    aySayi = "12";
+                    break;
+            }
+
+            return aySayi;
+        }
+        public string GunCevirme(string gun)
+        {
+            string gunSayi = "";
+
+            switch (gun)
+            {
+                case "1":
+                    gunSayi = "01";
+                    break;
+                case "2":
+                    gunSayi = "02";
+                    break;
+                case "3":
+                    gunSayi = "03";
+                    break;
+                case "4":
+                    gunSayi = "04";
+                    break;
+                case "5":
+                    gunSayi = "05";
+                    break;
+                case "6":
+                    gunSayi = "06";
+                    break;
+                case "7":
+                    gunSayi = "07";
+                    break;
+                case "8":
+                    gunSayi = "08";
+                    break;
+                case "9":
+                    gunSayi = "09";
+                    break;
+                default:
+                    gunSayi = gun;
+                    break;
+
+            }
+
+            return gunSayi;
+        }
     }
 }

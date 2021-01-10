@@ -84,7 +84,17 @@ namespace AkaStormProje
             }
             else
             {
-                Console.WriteLine("Kayıt Olundu");
+                Kullanici kullanici = new Kullanici();
+                KullaniciYonetici kullaniciYonetici = new KullaniciYonetici();
+                kullanici.getKullaniciKulAdi = txtKullaniciAdi.Text;
+                kullanici.getKullaniciSifre = txtSifre.Text;
+
+                if (kullaniciYonetici.Giris(kullanici)== true)
+                {
+                    frmKullaniciAnasayfa frmKullaniciAnasayfa = new frmKullaniciAnasayfa();
+                    frmKullaniciAnasayfa.Show();
+                    this.Hide();
+                }
             }
         }
         //-------------------------------------------------btn Olaylar-------------------------------------------------------------

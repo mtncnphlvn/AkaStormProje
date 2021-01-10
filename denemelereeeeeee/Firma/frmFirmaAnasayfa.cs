@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace AkaStormProje
 {
@@ -36,6 +37,32 @@ namespace AkaStormProje
                 this.SetDesktopLocation(MousePosition.X - mouse_x, MousePosition.Y - mouse_y);
             }
         }
+        //----------------------------------Anasayfa Giren kişinin bilgilerini yazdırma-------------------------------------------
+        private void FirmaBilgi()
+        {
+            pbResim.SizeMode = PictureBoxSizeMode.StretchImage;
+            VeritabaniYonetici veritabaniYonetici = new VeritabaniYonetici();
+            lblTarih.Text = DateTime.Now.ToShortDateString();
+            try
+            {
+                MySqlCommand komut = new MySqlCommand("select firma.firma_ad,SUM(firma_bakiye.firma_bakiye),firma_resim.firma_resim from firma inner join firma_bakiye on firma.firma_id = firma_bakiye.firma_id inner join firma_resim on firma.firma_id = firma_resim.firma_id where firma.firma_id = '" + Firma.firmaID + "'", veritabaniYonetici.OpenConnection());
+
+                MySqlDataReader reader;
+                reader = komut.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    lblKullaniciAdi.Text = Convert.ToString(reader[0]);
+                    lblBakiye.Text = Convert.ToString(reader[1]) + " TL";
+                    pbResim.ImageLocation = Convert.ToString(reader[2]);
+                }
+                veritabaniYonetici.CloseConnection();
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Hata var : ",ex.Message);
+            }
+
+        }
         //-----------------------------Diğer formları aynı form içinde açma methodu -------------------------------------------------
         private void FormGetir(Form frm)
         {
@@ -50,6 +77,8 @@ namespace AkaStormProje
         {
             frmFirmaOyunListele firmaOyunListele = new frmFirmaOyunListele();
             FormGetir(firmaOyunListele);
+            FirmaBilgi();
+
 
         }
         //------------------------------btn Olaylar ------------------------------------------------------------

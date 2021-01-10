@@ -48,6 +48,7 @@ namespace AkaStormProje
         //--------------------------form load--------------------------------------------------
         private void frmKullaniciAnasayfa_Load(object sender, EventArgs e)
         {
+            label5.Text = Kullanici.kullaniciID.ToString();
             frmOyunListele oyunListele = new frmOyunListele();
             FormGetir(oyunListele);
         }

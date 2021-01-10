@@ -57,7 +57,7 @@ namespace AkaStormProje
         //----------------------------btnFiltreExit--------------------
         private void btnFiltreExit_Click(object sender, EventArgs e)
         {
-            panFiltre.Visible = true;
+            panFiltre.Visible = false;
         }
     }
 }

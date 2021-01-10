@@ -295,7 +295,27 @@ namespace AkaStormProje
             //----------------------VERİTABANI KODLARI-----------------------------------------------------------------
             else
             {
-                Console.WriteLine("!! Kayıt Olundu !!");
+                Kullanici kullanici = new Kullanici();
+                KullaniciYonetici kullaniciYonetici = new KullaniciYonetici();
+                string dTarih = cmbYil.SelectedItem.ToString() + "-" + tarih.AyCevirme(cmbAy.SelectedItem.ToString()) + "-" + tarih.GunCevirme(cmbGun.SelectedItem.ToString());
+                kullanici.getKullaniciAdi = txtAd.Text;
+                kullanici.getKullaniciSoyadi = txtSoyad.Text;
+                kullanici.getKullaniciDogumTarih = dTarih;
+                kullanici.getKullaniciCinsiyet = cmbCinsiyet.SelectedItem.ToString();
+                kullanici.getKullaniciTelefon = txtTelefonNo.Text;
+                kullanici.getKullaniciEposta = txtEposta.Text;
+                kullanici.getKullaniciKulAdi = txtKullaniciAdi.Text;
+                kullanici.getKullaniciSifre = txtSifre.Text;
+
+                if(kullaniciYonetici.KayitOl(kullanici) == true)
+                {
+                    if (kullaniciYonetici.Giris(kullanici) == true)
+                    {
+                        frmKullaniciAnasayfa frmKullaniciAnasayfa = new frmKullaniciAnasayfa();
+                        frmKullaniciAnasayfa.Show();
+                        this.Hide();
+                    }
+                }
             }
         }
         //---------------------------------------btnExit---------------------------------------

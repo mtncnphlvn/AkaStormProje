@@ -1,0 +1,75 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+
+namespace AkaStormProje
+{
+    class FirmaYonetici:Firma
+    {
+        VeritabaniYonetici veritabaniYonetici = new VeritabaniYonetici();
+
+        public bool KayitOl(Firma firma)
+        {
+            bool kayit = false;
+
+            try
+            {
+                string sorgu = "insert into firma(firma_ad,firma_ceo,firma_eposta,firma_telefon,firma_sifre) values('"+firma.getFirmaAdi+"','"+firma.getFirmaCeo+"','"+firma.getFirmaEposta+"','"+firma.getFirmaTelefon+"','"+firma.getFirmaSifre+"')";
+                MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+
+                object sonuc = komut.ExecuteReader();
+                if (sonuc != null)
+                {
+                    MessageBox.Show("Kayıt Olundu");
+                    kayit = true;
+                }
+                else
+                {
+                    MessageBox.Show("Kayıt Başarız");
+                }
+
+                veritabaniYonetici.CloseConnection();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata var :" + ex.Message);
+            }
+            return kayit;
+        }
+
+        public bool Giris(Firma firma)
+        {
+
+            bool giris = false;
+            try
+            {
+                string sorgu = "select * from firma where firma_eposta='" + firma.getFirmaEposta + "'and firma_sifre='" + firma.getFirmaSifre + "'";
+                MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+                MySqlDataReader reader;
+                reader = komut.ExecuteReader();
+                if (reader.Read())
+                {
+                    giris = true;
+                    Firma.firmaID = Convert.ToInt32(reader[0]);
+                    MessageBox.Show("Giriş Başarılı ..");
+                }
+                else
+                {
+                    MessageBox.Show("Giriş Başarısız ..");
+                }
+                veritabaniYonetici.CloseConnection();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata var : ", ex.Message);
+            }
+            return giris;
+        }
+
+    }
+}

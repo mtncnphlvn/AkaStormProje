@@ -201,7 +201,24 @@ namespace AkaStormProje
             //----------------------VERİTABANI KODLARI-----------------------------------------------------------------
             else
             {
-                Console.WriteLine("!! Kayıt Olundu !!");
+                Firma firma = new Firma();
+                FirmaYonetici firmaYonetici = new FirmaYonetici();
+                firma.getFirmaAdi = txtFirmaAdi.Text;
+                firma.getFirmaCeo = txtCeo.Text;
+                firma.getFirmaEposta = txtEposta.Text;
+                firma.getFirmaTelefon = txtTelefonNo.Text;
+                firma.getFirmaSifre = txtSifre.Text;
+
+                if(firmaYonetici.KayitOl(firma)== true)
+                {
+                    if (firmaYonetici.Giris(firma) == true)
+                    {
+                        frmFirmaAnasayfa frmFirmaAnasayfa = new frmFirmaAnasayfa();
+                        frmFirmaAnasayfa.Show();
+                        this.Hide();
+                    }
+                }
+                
             }
         }
 
