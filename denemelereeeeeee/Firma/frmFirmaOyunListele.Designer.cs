@@ -279,7 +279,7 @@
             this.btnFiltreExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnFiltreExit.FlatAppearance.BorderSize = 0;
             this.btnFiltreExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.btnFiltreExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnFiltreExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltreExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltreExit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnFiltreExit.Location = new System.Drawing.Point(343, 1);
@@ -312,7 +312,9 @@
             // 
             // cmbFiyat2
             // 
+            this.cmbFiyat2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbFiyat2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiyat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbFiyat2.FormattingEnabled = true;
             this.cmbFiyat2.Location = new System.Drawing.Point(291, 63);
             this.cmbFiyat2.Name = "cmbFiyat2";
@@ -321,7 +323,9 @@
             // 
             // cmbFiyat1
             // 
+            this.cmbFiyat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbFiyat1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiyat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbFiyat1.FormattingEnabled = true;
             this.cmbFiyat1.Location = new System.Drawing.Point(209, 63);
             this.cmbFiyat1.Name = "cmbFiyat1";
@@ -330,7 +334,9 @@
             // 
             // cmbYil2
             // 
+            this.cmbYil2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbYil2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbYil2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbYil2.FormattingEnabled = true;
             this.cmbYil2.Location = new System.Drawing.Point(291, 27);
             this.cmbYil2.Name = "cmbYil2";
@@ -349,7 +355,9 @@
             // 
             // cmbYil1
             // 
+            this.cmbYil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbYil1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbYil1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbYil1.FormattingEnabled = true;
             this.cmbYil1.Location = new System.Drawing.Point(209, 27);
             this.cmbYil1.Name = "cmbYil1";
@@ -398,7 +406,9 @@
             // 
             // cmbGenel
             // 
+            this.cmbGenel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbGenel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGenel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbGenel.FormattingEnabled = true;
             this.cmbGenel.Items.AddRange(new object[] {
             "İsim (A-Z)",

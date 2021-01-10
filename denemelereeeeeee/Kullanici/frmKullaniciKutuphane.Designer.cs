@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKullaniciKutuphane));
             this.panSag = new System.Windows.Forms.Panel();
+            this.btnYorum = new System.Windows.Forms.Button();
+            this.btnPuan = new System.Windows.Forms.Button();
             this.lblFiyat = new System.Windows.Forms.Label();
             this.lblPuan = new System.Windows.Forms.Label();
             this.lblKategori = new System.Windows.Forms.Label();
@@ -39,11 +42,9 @@
             this.txtKonu = new System.Windows.Forms.RichTextBox();
             this.txtOyunAdi = new System.Windows.Forms.RichTextBox();
             this.lblGelistirici = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panSol = new System.Windows.Forms.Panel();
             this.panFiltre = new System.Windows.Forms.Panel();
             this.btnFiltreExit = new System.Windows.Forms.Button();
@@ -76,8 +77,8 @@
             // panSag
             // 
             this.panSag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.panSag.Controls.Add(this.button2);
-            this.panSag.Controls.Add(this.button1);
+            this.panSag.Controls.Add(this.btnYorum);
+            this.panSag.Controls.Add(this.btnPuan);
             this.panSag.Controls.Add(this.lblFiyat);
             this.panSag.Controls.Add(this.lblPuan);
             this.panSag.Controls.Add(this.lblKategori);
@@ -95,6 +96,51 @@
             this.panSag.Name = "panSag";
             this.panSag.Size = new System.Drawing.Size(250, 650);
             this.panSag.TabIndex = 1;
+            // 
+            // btnYorum
+            // 
+            this.btnYorum.BackgroundImage = global::AkaStormProje.Properties.Resources.BtnLeave;
+            this.btnYorum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnYorum.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnYorum.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnYorum.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnYorum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYorum.Font = new System.Drawing.Font("Segoe UI Black", 12F);
+            this.btnYorum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.btnYorum.Image = global::AkaStormProje.Properties.Resources.Commit1;
+            this.btnYorum.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnYorum.Location = new System.Drawing.Point(128, 553);
+            this.btnYorum.Name = "btnYorum";
+            this.btnYorum.Size = new System.Drawing.Size(110, 65);
+            this.btnYorum.TabIndex = 29;
+            this.btnYorum.Text = "Yorum Yap";
+            this.btnYorum.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnYorum.UseVisualStyleBackColor = true;
+            this.btnYorum.MouseLeave += new System.EventHandler(this.btnYorum_MouseLeave);
+            this.btnYorum.MouseHover += new System.EventHandler(this.btnYorum_MouseHover);
+            // 
+            // btnPuan
+            // 
+            this.btnPuan.BackgroundImage = global::AkaStormProje.Properties.Resources.BtnLeave;
+            this.btnPuan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPuan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnPuan.FlatAppearance.BorderSize = 0;
+            this.btnPuan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnPuan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnPuan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPuan.Font = new System.Drawing.Font("Segoe UI Black", 12F);
+            this.btnPuan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.btnPuan.Image = ((System.Drawing.Image)(resources.GetObject("btnPuan.Image")));
+            this.btnPuan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPuan.Location = new System.Drawing.Point(12, 553);
+            this.btnPuan.Name = "btnPuan";
+            this.btnPuan.Size = new System.Drawing.Size(110, 65);
+            this.btnPuan.TabIndex = 29;
+            this.btnPuan.Text = "Puan Ver";
+            this.btnPuan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPuan.UseVisualStyleBackColor = true;
+            this.btnPuan.MouseLeave += new System.EventHandler(this.btnPuan_MouseLeave);
+            this.btnPuan.MouseHover += new System.EventHandler(this.btnPuan_MouseHover);
             // 
             // lblFiyat
             // 
@@ -170,7 +216,7 @@
             // 
             this.txtKonu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.txtKonu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKonu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKonu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKonu.Location = new System.Drawing.Point(29, 310);
             this.txtKonu.Name = "txtKonu";
             this.txtKonu.Size = new System.Drawing.Size(189, 75);
@@ -184,7 +230,7 @@
             this.txtOyunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOyunAdi.Location = new System.Drawing.Point(29, 202);
             this.txtOyunAdi.Name = "txtOyunAdi";
-            this.txtOyunAdi.Size = new System.Drawing.Size(189, 105);
+            this.txtOyunAdi.Size = new System.Drawing.Size(189, 102);
             this.txtOyunAdi.TabIndex = 17;
             this.txtOyunAdi.Text = "           Arma 3";
             // 
@@ -197,6 +243,15 @@
             this.lblGelistirici.Size = new System.Drawing.Size(44, 15);
             this.lblGelistirici.TabIndex = 25;
             this.lblGelistirici.Text = "label7";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 184);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -218,55 +273,10 @@
             this.label3.TabIndex = 21;
             this.label3.Text = "Geliştirici :";
             // 
-            // button2
-            // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Black", 12F);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(128, 553);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 65);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Yorum Yap";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 12F);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(17, 553);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 65);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Puan Ver";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 184);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // panSol
             // 
             this.panSol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.panSol.BackgroundImage = global::AkaStormProje.Properties.Resources.KullaniciKutuphane;
             this.panSol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panSol.Controls.Add(this.panFiltre);
             this.panSol.Controls.Add(this.btnFiltre);
@@ -292,7 +302,7 @@
             this.panFiltre.Controls.Add(this.label8);
             this.panFiltre.Controls.Add(this.label12);
             this.panFiltre.Controls.Add(this.cmbGenel);
-            this.panFiltre.Location = new System.Drawing.Point(403, 53);
+            this.panFiltre.Location = new System.Drawing.Point(404, 51);
             this.panFiltre.Name = "panFiltre";
             this.panFiltre.Size = new System.Drawing.Size(363, 133);
             this.panFiltre.TabIndex = 11;
@@ -303,9 +313,10 @@
             this.btnFiltreExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnFiltreExit.FlatAppearance.BorderSize = 0;
             this.btnFiltreExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.btnFiltreExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnFiltreExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltreExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltreExit.Location = new System.Drawing.Point(342, 3);
+            this.btnFiltreExit.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnFiltreExit.Location = new System.Drawing.Point(344, 1);
             this.btnFiltreExit.Name = "btnFiltreExit";
             this.btnFiltreExit.Size = new System.Drawing.Size(18, 23);
             this.btnFiltreExit.TabIndex = 10;
@@ -315,13 +326,14 @@
             // 
             // btnFiltre2
             // 
+            this.btnFiltre2.BackgroundImage = global::AkaStormProje.Properties.Resources.btnFiltre1;
             this.btnFiltre2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFiltre2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnFiltre2.FlatAppearance.BorderSize = 0;
             this.btnFiltre2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnFiltre2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnFiltre2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltre2.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFiltre2.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnFiltre2.Location = new System.Drawing.Point(235, 92);
             this.btnFiltre2.Name = "btnFiltre2";
             this.btnFiltre2.Size = new System.Drawing.Size(89, 34);
@@ -333,7 +345,9 @@
             // 
             // cmbFiyat2
             // 
+            this.cmbFiyat2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbFiyat2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiyat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbFiyat2.FormattingEnabled = true;
             this.cmbFiyat2.Location = new System.Drawing.Point(291, 63);
             this.cmbFiyat2.Name = "cmbFiyat2";
@@ -342,7 +356,9 @@
             // 
             // cmbFiyat1
             // 
+            this.cmbFiyat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbFiyat1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiyat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbFiyat1.FormattingEnabled = true;
             this.cmbFiyat1.Location = new System.Drawing.Point(209, 63);
             this.cmbFiyat1.Name = "cmbFiyat1";
@@ -351,7 +367,9 @@
             // 
             // cmbYil2
             // 
+            this.cmbYil2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbYil2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbYil2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbYil2.FormattingEnabled = true;
             this.cmbYil2.Location = new System.Drawing.Point(291, 27);
             this.cmbYil2.Name = "cmbYil2";
@@ -370,7 +388,9 @@
             // 
             // cmbYil1
             // 
+            this.cmbYil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbYil1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbYil1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbYil1.FormattingEnabled = true;
             this.cmbYil1.Location = new System.Drawing.Point(209, 27);
             this.cmbYil1.Name = "cmbYil1";
@@ -380,9 +400,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
             this.label10.Location = new System.Drawing.Point(171, 66);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 13);
+            this.label10.Size = new System.Drawing.Size(49, 21);
             this.label10.TabIndex = 2;
             this.label10.Text = "Fiyat :";
             // 
@@ -399,24 +420,28 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
             this.label8.Location = new System.Drawing.Point(179, 30);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 13);
+            this.label8.Size = new System.Drawing.Size(33, 21);
             this.label8.TabIndex = 2;
             this.label8.Text = "Yıl :";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(14, 50);
+            this.label12.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(16, 45);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 13);
+            this.label12.Size = new System.Drawing.Size(50, 21);
             this.label12.TabIndex = 1;
             this.label12.Text = "Filtre :";
             // 
             // cmbGenel
             // 
+            this.cmbGenel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.cmbGenel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGenel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbGenel.FormattingEnabled = true;
             this.cmbGenel.Items.AddRange(new object[] {
             "İsim (A-Z)",
@@ -427,25 +452,27 @@
             "Yıl (En Eski)",
             "Puan (En Yüksek)",
             "Puan (En Düşük)"});
-            this.cmbGenel.Location = new System.Drawing.Point(55, 47);
+            this.cmbGenel.Location = new System.Drawing.Point(72, 46);
             this.cmbGenel.Name = "cmbGenel";
             this.cmbGenel.Size = new System.Drawing.Size(93, 21);
             this.cmbGenel.TabIndex = 0;
             // 
             // btnFiltre
             // 
+            this.btnFiltre.BackgroundImage = global::AkaStormProje.Properties.Resources.btnFiltre1;
             this.btnFiltre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFiltre.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltre.FlatAppearance.BorderSize = 0;
             this.btnFiltre.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltre.Font = new System.Drawing.Font("Segoe UI Black", 10F);
+            this.btnFiltre.Font = new System.Drawing.Font("Segoe Print", 13F, System.Drawing.FontStyle.Bold);
             this.btnFiltre.Location = new System.Drawing.Point(670, 140);
             this.btnFiltre.Name = "btnFiltre";
             this.btnFiltre.Size = new System.Drawing.Size(96, 44);
             this.btnFiltre.TabIndex = 10;
             this.btnFiltre.Text = "Filtrele";
+            this.btnFiltre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFiltre.UseVisualStyleBackColor = true;
             this.btnFiltre.Click += new System.EventHandler(this.btnFiltre_Click);
             this.btnFiltre.MouseLeave += new System.EventHandler(this.btnFiltre_MouseLeave);
@@ -455,11 +482,11 @@
             // 
             this.txtAdFiltre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
             this.txtAdFiltre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAdFiltre.Font = new System.Drawing.Font("Segoe UI Black", 11F);
+            this.txtAdFiltre.Font = new System.Drawing.Font("Segoe UI Black", 12F);
             this.txtAdFiltre.ForeColor = System.Drawing.Color.Silver;
-            this.txtAdFiltre.Location = new System.Drawing.Point(156, 166);
+            this.txtAdFiltre.Location = new System.Drawing.Point(157, 164);
             this.txtAdFiltre.Name = "txtAdFiltre";
-            this.txtAdFiltre.Size = new System.Drawing.Size(226, 20);
+            this.txtAdFiltre.Size = new System.Drawing.Size(226, 22);
             this.txtAdFiltre.TabIndex = 9;
             this.txtAdFiltre.Text = "İsme göre ara";
             this.txtAdFiltre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -478,7 +505,7 @@
             this.Column4,
             this.Column6});
             this.dataGridView1.GridColor = System.Drawing.Color.RosyBrown;
-            this.dataGridView1.Location = new System.Drawing.Point(155, 192);
+            this.dataGridView1.Location = new System.Drawing.Point(155, 190);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(611, 440);
             this.dataGridView1.TabIndex = 3;
@@ -538,8 +565,8 @@
 
         private System.Windows.Forms.Panel panSol;
         private System.Windows.Forms.Panel panSag;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnYorum;
+        private System.Windows.Forms.Button btnPuan;
         private System.Windows.Forms.Label lblFiyat;
         private System.Windows.Forms.Label lblPuan;
         private System.Windows.Forms.Label lblKategori;

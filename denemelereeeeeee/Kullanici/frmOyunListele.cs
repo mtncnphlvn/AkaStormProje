@@ -46,7 +46,6 @@ namespace AkaStormProje
         {
             textDoldur.TextEnter(txtAdFiltre, "İsme göre ara");
         }
-
         private void txtAdFiltre_Leave(object sender, EventArgs e)
         {
             textDoldur.TextLeave(txtAdFiltre, "İsme göre ara");
@@ -59,6 +58,14 @@ namespace AkaStormProje
         private void btnFiltre2_MouseLeave(object sender, EventArgs e)
         {
             btnFiltre2.BackgroundImage = Properties.Resources.btnFiltre1;
+        }
+        private void btnAl_MouseHover(object sender, EventArgs e)
+        {
+            btnAl.BackgroundImage = Properties.Resources.BtnHvr;
+        }
+        private void btnAl_MouseLeave(object sender, EventArgs e)
+        {
+            btnAl.BackgroundImage = Properties.Resources.BtnLeave;
         }
     }
 }

@@ -59,5 +59,21 @@ namespace AkaStormProje
         {
             panFiltre.Visible = false;
         }
+        private void btnPuan_MouseHover(object sender, EventArgs e)
+        {
+            btnPuan.BackgroundImage = Properties.Resources.BtnHvr;
+        }
+        private void btnPuan_MouseLeave(object sender, EventArgs e)
+        {
+            btnPuan.BackgroundImage = Properties.Resources.BtnLeave;
+        }
+        private void btnYorum_MouseHover(object sender, EventArgs e)
+        {
+            btnYorum.BackgroundImage = Properties.Resources.BtnHvr;
+        }
+        private void btnYorum_MouseLeave(object sender, EventArgs e)
+        {
+            btnYorum.BackgroundImage = Properties.Resources.BtnLeave;
+        }
     }
 }
