@@ -178,7 +178,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGirisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Tag = "<";
+            this.Tag = "0";
             this.Text = "frmGirisEkrani";
             this.Load += new System.EventHandler(this.frmGirisEkrani_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmGirisEkrani_MouseDown);

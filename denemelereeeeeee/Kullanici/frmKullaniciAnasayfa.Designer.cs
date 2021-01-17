@@ -30,21 +30,21 @@
         {
             this.panAlt = new System.Windows.Forms.Panel();
             this.panUst = new System.Windows.Forms.Panel();
+            this.lblBakiye = new System.Windows.Forms.Label();
+            this.lblKullaniciAdi = new System.Windows.Forms.Label();
+            this.lblTarih = new System.Windows.Forms.Label();
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnGoruslerim = new System.Windows.Forms.Button();
             this.btnKutuphane = new System.Windows.Forms.Button();
             this.btnAnasayfa = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pbResim = new System.Windows.Forms.PictureBox();
             this.panUst.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             this.SuspendLayout();
             // 
             // panAlt
@@ -58,19 +58,19 @@
             // 
             this.panUst.BackgroundImage = global::AkaStormProje.Properties.Resources.KullaniciVeFirmaAnasayfa;
             this.panUst.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panUst.Controls.Add(this.label6);
-            this.panUst.Controls.Add(this.label5);
-            this.panUst.Controls.Add(this.label4);
+            this.panUst.Controls.Add(this.lblBakiye);
+            this.panUst.Controls.Add(this.lblKullaniciAdi);
+            this.panUst.Controls.Add(this.lblTarih);
             this.panUst.Controls.Add(this.btnProfil);
             this.panUst.Controls.Add(this.btnGoruslerim);
             this.panUst.Controls.Add(this.btnKutuphane);
             this.panUst.Controls.Add(this.btnAnasayfa);
             this.panUst.Controls.Add(this.btnExit);
             this.panUst.Controls.Add(this.linkLabel1);
-            this.panUst.Controls.Add(this.label3);
-            this.panUst.Controls.Add(this.label2);
+            this.panUst.Controls.Add(this.label4);
+            this.panUst.Controls.Add(this.label10);
             this.panUst.Controls.Add(this.label1);
-            this.panUst.Controls.Add(this.pictureBox1);
+            this.panUst.Controls.Add(this.pbResim);
             this.panUst.Location = new System.Drawing.Point(0, 0);
             this.panUst.Name = "panUst";
             this.panUst.Size = new System.Drawing.Size(1200, 150);
@@ -78,6 +78,39 @@
             this.panUst.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panUst_MouseDown);
             this.panUst.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panUst_MouseMove);
             this.panUst.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panUst_MouseUp);
+            // 
+            // lblBakiye
+            // 
+            this.lblBakiye.AutoSize = true;
+            this.lblBakiye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.lblBakiye.Font = new System.Drawing.Font("Segoe UI Black", 9F);
+            this.lblBakiye.Location = new System.Drawing.Point(412, 108);
+            this.lblBakiye.Name = "lblBakiye";
+            this.lblBakiye.Size = new System.Drawing.Size(44, 15);
+            this.lblBakiye.TabIndex = 16;
+            this.lblBakiye.Text = "label6";
+            // 
+            // lblKullaniciAdi
+            // 
+            this.lblKullaniciAdi.AutoSize = true;
+            this.lblKullaniciAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.lblKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Black", 9F);
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(250, 70);
+            this.lblKullaniciAdi.Name = "lblKullaniciAdi";
+            this.lblKullaniciAdi.Size = new System.Drawing.Size(44, 15);
+            this.lblKullaniciAdi.TabIndex = 15;
+            this.lblKullaniciAdi.Text = "label5";
+            // 
+            // lblTarih
+            // 
+            this.lblTarih.AutoSize = true;
+            this.lblTarih.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.lblTarih.Font = new System.Drawing.Font("Segoe UI Black", 9F);
+            this.lblTarih.Location = new System.Drawing.Point(405, 31);
+            this.lblTarih.Name = "lblTarih";
+            this.lblTarih.Size = new System.Drawing.Size(44, 15);
+            this.lblTarih.TabIndex = 14;
+            this.lblTarih.Text = "label4";
             // 
             // btnProfil
             // 
@@ -205,27 +238,27 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Bakiye Yükle";
             // 
-            // label3
+            // label4
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(348, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 21);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Bakiye :";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(348, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 21);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Bakiye :";
             // 
-            // label2
+            // label10
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(349, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tarih :";
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.label10.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(349, 28);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 21);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Tarih :";
             // 
             // label1
             // 
@@ -238,46 +271,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Kullanıcı Adı :";
             // 
-            // pictureBox1
+            // pbResim
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(25, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 117);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.label4.Location = new System.Drawing.Point(405, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 15);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "label4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.label5.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.label5.Location = new System.Drawing.Point(250, 70);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 15);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.label6.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.label6.Location = new System.Drawing.Point(412, 108);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 15);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "label6";
+            this.pbResim.Location = new System.Drawing.Point(25, 17);
+            this.pbResim.Name = "pbResim";
+            this.pbResim.Size = new System.Drawing.Size(110, 117);
+            this.pbResim.TabIndex = 0;
+            this.pbResim.TabStop = false;
             // 
             // frmKullaniciAnasayfa
             // 
@@ -294,7 +294,7 @@
             this.Load += new System.EventHandler(this.frmKullaniciAnasayfa_Load);
             this.panUst.ResumeLayout(false);
             this.panUst.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResim)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,9 +303,9 @@
 
         private System.Windows.Forms.Panel panUst;
         private System.Windows.Forms.Panel panAlt;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pbResim;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btnExit;
@@ -313,8 +313,8 @@
         private System.Windows.Forms.Button btnGoruslerim;
         private System.Windows.Forms.Button btnKutuphane;
         private System.Windows.Forms.Button btnAnasayfa;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblBakiye;
+        private System.Windows.Forms.Label lblKullaniciAdi;
+        private System.Windows.Forms.Label lblTarih;
     }
 }
