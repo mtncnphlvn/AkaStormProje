@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace AkaStormProje
 {
-    class FirmaYonetici:Firma
+    class FirmaYonetici
     {
         VeritabaniYonetici veritabaniYonetici = new VeritabaniYonetici();
 

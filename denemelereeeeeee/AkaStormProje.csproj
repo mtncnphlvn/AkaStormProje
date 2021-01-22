@@ -148,6 +148,8 @@
       <DependentUpon>frmOyunListele.cs</DependentUpon>
     </Compile>
     <Compile Include="Kontrol\Kontrol.cs" />
+    <Compile Include="Firma Class\Oyun.cs" />
+    <Compile Include="Firma Class\OyunYonetici.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Kontrol\Tarih.cs" />

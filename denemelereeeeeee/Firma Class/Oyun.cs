@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AkaStormProje
+{
+    class Oyun
+    {
+        public static int oyunID;
+        private string oyunAdi;
+        private string oyunKonusu;
+        private string oyunKategori;
+        private double oyunFiyat;
+        private string oyunResim;
+
+        public string getOyunAdi
+        {
+            get { return oyunAdi; }
+            set { oyunAdi = value; }
+        }
+        public string getOyunKonusu
+        {
+            get { return oyunKonusu; }
+            set { oyunKonusu = value; }
+        }
+        public string getOyunKategori
+        {
+            get { return oyunKategori; }
+            set { oyunKategori = value; }
+        }
+        public double getOyunFiyat
+        {
+            get { return oyunFiyat; }
+            set { oyunFiyat = value; }
+        }
+        public string getOyunResim
+        {
+            get { return oyunResim; }
+            set { oyunResim = value; }
+        }
+    }
+}

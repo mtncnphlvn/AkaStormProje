@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.panSag = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnEkle = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnResimSec = new System.Windows.Forms.Button();
+            this.txtResimYolu = new System.Windows.Forms.TextBox();
+            this.txtFiyat = new System.Windows.Forms.TextBox();
+            this.cmbKategori = new System.Windows.Forms.ComboBox();
+            this.txtKonu = new System.Windows.Forms.RichTextBox();
+            this.txtOyunAdi = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,21 +52,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblYil = new System.Windows.Forms.Label();
-            this.txtKonu = new System.Windows.Forms.RichTextBox();
-            this.txtOyunAdi = new System.Windows.Forms.RichTextBox();
+            this.rtxtKonu = new System.Windows.Forms.RichTextBox();
+            this.rtxtOyunAdi = new System.Windows.Forms.RichTextBox();
             this.lblGelistirici = new System.Windows.Forms.Label();
             this.pbOyunResim = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panSag.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panSol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOyunResim)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panSag
@@ -77,16 +76,36 @@
             this.panSag.Size = new System.Drawing.Size(950, 650);
             this.panSag.TabIndex = 1;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.richTextBox2);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Location = new System.Drawing.Point(332, 45);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(585, 560);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "AkaStorm Oyun Sözleşmesi";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.richTextBox2.Location = new System.Drawing.Point(7, 29);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(572, 520);
+            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Text = "";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.panel3.Controls.Add(this.btnEkle);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.richTextBox1);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.btnResimSec);
+            this.panel3.Controls.Add(this.txtResimYolu);
+            this.panel3.Controls.Add(this.txtFiyat);
+            this.panel3.Controls.Add(this.cmbKategori);
+            this.panel3.Controls.Add(this.txtKonu);
+            this.panel3.Controls.Add(this.txtOyunAdi);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label7);
@@ -118,56 +137,60 @@
             this.btnEkle.MouseLeave += new System.EventHandler(this.btnEkle_MouseLeave);
             this.btnEkle.MouseHover += new System.EventHandler(this.btnEkle_MouseHover);
             // 
-            // button1
+            // btnResimSec
             // 
-            this.button1.Location = new System.Drawing.Point(216, 449);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 22);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnResimSec.Location = new System.Drawing.Point(216, 449);
+            this.btnResimSec.Name = "btnResimSec";
+            this.btnResimSec.Size = new System.Drawing.Size(31, 22);
+            this.btnResimSec.TabIndex = 12;
+            this.btnResimSec.Text = "...";
+            this.btnResimSec.UseVisualStyleBackColor = true;
+            this.btnResimSec.Click += new System.EventHandler(this.btnResimSec_Click);
             // 
-            // textBox3
+            // txtResimYolu
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(116, 450);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(99, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtResimYolu.BackColor = System.Drawing.SystemColors.Window;
+            this.txtResimYolu.Location = new System.Drawing.Point(116, 450);
+            this.txtResimYolu.Name = "txtResimYolu";
+            this.txtResimYolu.ReadOnly = true;
+            this.txtResimYolu.Size = new System.Drawing.Size(99, 20);
+            this.txtResimYolu.TabIndex = 11;
             // 
-            // textBox2
+            // txtFiyat
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 409);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtFiyat.Location = new System.Drawing.Point(116, 409);
+            this.txtFiyat.Name = "txtFiyat";
+            this.txtFiyat.Size = new System.Drawing.Size(131, 20);
+            this.txtFiyat.TabIndex = 10;
+            this.txtFiyat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFiyat_KeyPress);
             // 
-            // comboBox1
+            // cmbKategori
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(116, 369);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(131, 21);
-            this.comboBox1.TabIndex = 9;
+            this.cmbKategori.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.cmbKategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbKategori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbKategori.FormattingEnabled = true;
+            this.cmbKategori.Location = new System.Drawing.Point(116, 369);
+            this.cmbKategori.Name = "cmbKategori";
+            this.cmbKategori.Size = new System.Drawing.Size(131, 21);
+            this.cmbKategori.TabIndex = 9;
             // 
-            // richTextBox1
+            // txtKonu
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(116, 291);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(131, 54);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
+            this.txtKonu.Location = new System.Drawing.Point(116, 291);
+            this.txtKonu.Name = "txtKonu";
+            this.txtKonu.Size = new System.Drawing.Size(131, 54);
+            this.txtKonu.TabIndex = 8;
+            this.txtKonu.Text = "";
+            this.txtKonu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKonu_KeyPress);
             // 
-            // textBox1
+            // txtOyunAdi
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 255);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtOyunAdi.Location = new System.Drawing.Point(116, 255);
+            this.txtOyunAdi.Name = "txtOyunAdi";
+            this.txtOyunAdi.Size = new System.Drawing.Size(131, 20);
+            this.txtOyunAdi.TabIndex = 7;
+            this.txtOyunAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOyunAdi_KeyPress);
             // 
             // pictureBox1
             // 
@@ -207,7 +230,6 @@
             this.label8.Size = new System.Drawing.Size(82, 28);
             this.label8.TabIndex = 2;
             this.label8.Text = "Konusu :";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label10
             // 
@@ -238,8 +260,8 @@
             this.panSol.Controls.Add(this.label6);
             this.panSol.Controls.Add(this.label2);
             this.panSol.Controls.Add(this.lblYil);
-            this.panSol.Controls.Add(this.txtKonu);
-            this.panSol.Controls.Add(this.txtOyunAdi);
+            this.panSol.Controls.Add(this.rtxtKonu);
+            this.panSol.Controls.Add(this.rtxtOyunAdi);
             this.panSol.Controls.Add(this.lblGelistirici);
             this.panSol.Controls.Add(this.pbOyunResim);
             this.panSol.Controls.Add(this.label5);
@@ -309,29 +331,29 @@
             this.lblYil.TabIndex = 40;
             this.lblYil.Text = "label8";
             // 
-            // txtKonu
+            // rtxtKonu
             // 
-            this.txtKonu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.txtKonu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKonu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKonu.Location = new System.Drawing.Point(32, 397);
-            this.txtKonu.Name = "txtKonu";
-            this.txtKonu.ReadOnly = true;
-            this.txtKonu.Size = new System.Drawing.Size(189, 75);
-            this.txtKonu.TabIndex = 32;
-            this.txtKonu.Text = "Konu : Mükemmel bir savaş Simulasyonu";
+            this.rtxtKonu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.rtxtKonu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtKonu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rtxtKonu.Location = new System.Drawing.Point(32, 397);
+            this.rtxtKonu.Name = "rtxtKonu";
+            this.rtxtKonu.ReadOnly = true;
+            this.rtxtKonu.Size = new System.Drawing.Size(189, 75);
+            this.rtxtKonu.TabIndex = 32;
+            this.rtxtKonu.Text = "Konu : Mükemmel bir savaş Simulasyonu";
             // 
-            // txtOyunAdi
+            // rtxtOyunAdi
             // 
-            this.txtOyunAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
-            this.txtOyunAdi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOyunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOyunAdi.Location = new System.Drawing.Point(32, 291);
-            this.txtOyunAdi.Name = "txtOyunAdi";
-            this.txtOyunAdi.ReadOnly = true;
-            this.txtOyunAdi.Size = new System.Drawing.Size(189, 100);
-            this.txtOyunAdi.TabIndex = 31;
-            this.txtOyunAdi.Text = "           Arma 3";
+            this.rtxtOyunAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.rtxtOyunAdi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtOyunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rtxtOyunAdi.Location = new System.Drawing.Point(32, 291);
+            this.rtxtOyunAdi.Name = "rtxtOyunAdi";
+            this.rtxtOyunAdi.ReadOnly = true;
+            this.rtxtOyunAdi.Size = new System.Drawing.Size(189, 100);
+            this.rtxtOyunAdi.TabIndex = 31;
+            this.rtxtOyunAdi.Text = "           Arma 3";
             // 
             // lblGelistirici
             // 
@@ -372,30 +394,6 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "Geliştirici :";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.richTextBox2);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(332, 45);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(585, 560);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "AkaStorm Oyun Sözleşmesi";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
-            this.richTextBox2.Location = new System.Drawing.Point(7, 29);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(572, 520);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
-            // 
             // frmOyunEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,14 +404,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmOyunEkle";
             this.Text = "frmOyunEkle";
+            this.Load += new System.EventHandler(this.frmOyunEkle_Load);
             this.panSag.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panSol.ResumeLayout(false);
             this.panSol.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOyunResim)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -427,8 +426,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblYil;
-        private System.Windows.Forms.RichTextBox txtKonu;
-        private System.Windows.Forms.RichTextBox txtOyunAdi;
+        private System.Windows.Forms.RichTextBox rtxtKonu;
+        private System.Windows.Forms.RichTextBox rtxtOyunAdi;
         private System.Windows.Forms.Label lblGelistirici;
         private System.Windows.Forms.PictureBox pbOyunResim;
         private System.Windows.Forms.Label label5;
@@ -440,14 +439,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox txtResimYolu;
+        private System.Windows.Forms.TextBox txtFiyat;
+        private System.Windows.Forms.ComboBox cmbKategori;
+        private System.Windows.Forms.RichTextBox txtKonu;
+        private System.Windows.Forms.TextBox txtOyunAdi;
         private System.Windows.Forms.Button btnEkle;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnResimSec;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
     }
