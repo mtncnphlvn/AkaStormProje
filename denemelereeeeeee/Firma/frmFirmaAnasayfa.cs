@@ -78,6 +78,7 @@ namespace AkaStormProje
             frmFirmaOyunListele firmaOyunListele = new frmFirmaOyunListele();
             FormGetir(firmaOyunListele);
             FirmaBilgi();
+            Console.WriteLine(Firma.firmaID);
 
 
         }

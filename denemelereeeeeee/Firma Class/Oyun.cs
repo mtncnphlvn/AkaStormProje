@@ -8,11 +8,11 @@ namespace AkaStormProje
 {
     class Oyun
     {
-        public static int oyunID;
+        public static int oyunID = 0;
         private string oyunAdi;
         private string oyunKonusu;
-        private string oyunKategori;
-        private double oyunFiyat;
+        private int oyunKategori;
+        private int oyunFiyat;
         private string oyunResim;
 
         public string getOyunAdi
@@ -25,12 +25,12 @@ namespace AkaStormProje
             get { return oyunKonusu; }
             set { oyunKonusu = value; }
         }
-        public string getOyunKategori
+        public int getOyunKategori
         {
             get { return oyunKategori; }
             set { oyunKategori = value; }
         }
-        public double getOyunFiyat
+        public int getOyunFiyat
         {
             get { return oyunFiyat; }
             set { oyunFiyat = value; }

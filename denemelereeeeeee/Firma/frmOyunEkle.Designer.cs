@@ -32,6 +32,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblResimUyari = new System.Windows.Forms.Label();
+            this.lblFiyatUyari = new System.Windows.Forms.Label();
+            this.lblKatUyari = new System.Windows.Forms.Label();
+            this.lblKonuUyari = new System.Windows.Forms.Label();
+            this.lblAdUyari = new System.Windows.Forms.Label();
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnResimSec = new System.Windows.Forms.Button();
             this.txtResimYolu = new System.Windows.Forms.TextBox();
@@ -99,6 +104,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.panel3.Controls.Add(this.lblResimUyari);
+            this.panel3.Controls.Add(this.lblFiyatUyari);
+            this.panel3.Controls.Add(this.lblKatUyari);
+            this.panel3.Controls.Add(this.lblKonuUyari);
+            this.panel3.Controls.Add(this.lblAdUyari);
             this.panel3.Controls.Add(this.btnEkle);
             this.panel3.Controls.Add(this.btnResimSec);
             this.panel3.Controls.Add(this.txtResimYolu);
@@ -117,6 +127,61 @@
             this.panel3.Size = new System.Drawing.Size(284, 560);
             this.panel3.TabIndex = 6;
             // 
+            // lblResimUyari
+            // 
+            this.lblResimUyari.AutoSize = true;
+            this.lblResimUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblResimUyari.ForeColor = System.Drawing.Color.Red;
+            this.lblResimUyari.Location = new System.Drawing.Point(253, 445);
+            this.lblResimUyari.Name = "lblResimUyari";
+            this.lblResimUyari.Size = new System.Drawing.Size(19, 25);
+            this.lblResimUyari.TabIndex = 18;
+            this.lblResimUyari.Text = "!";
+            // 
+            // lblFiyatUyari
+            // 
+            this.lblFiyatUyari.AutoSize = true;
+            this.lblFiyatUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblFiyatUyari.ForeColor = System.Drawing.Color.Red;
+            this.lblFiyatUyari.Location = new System.Drawing.Point(253, 406);
+            this.lblFiyatUyari.Name = "lblFiyatUyari";
+            this.lblFiyatUyari.Size = new System.Drawing.Size(19, 25);
+            this.lblFiyatUyari.TabIndex = 17;
+            this.lblFiyatUyari.Text = "!";
+            // 
+            // lblKatUyari
+            // 
+            this.lblKatUyari.AutoSize = true;
+            this.lblKatUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKatUyari.ForeColor = System.Drawing.Color.Red;
+            this.lblKatUyari.Location = new System.Drawing.Point(253, 366);
+            this.lblKatUyari.Name = "lblKatUyari";
+            this.lblKatUyari.Size = new System.Drawing.Size(19, 25);
+            this.lblKatUyari.TabIndex = 16;
+            this.lblKatUyari.Text = "!";
+            // 
+            // lblKonuUyari
+            // 
+            this.lblKonuUyari.AutoSize = true;
+            this.lblKonuUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKonuUyari.ForeColor = System.Drawing.Color.Red;
+            this.lblKonuUyari.Location = new System.Drawing.Point(253, 305);
+            this.lblKonuUyari.Name = "lblKonuUyari";
+            this.lblKonuUyari.Size = new System.Drawing.Size(19, 25);
+            this.lblKonuUyari.TabIndex = 15;
+            this.lblKonuUyari.Text = "!";
+            // 
+            // lblAdUyari
+            // 
+            this.lblAdUyari.AutoSize = true;
+            this.lblAdUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAdUyari.ForeColor = System.Drawing.Color.Red;
+            this.lblAdUyari.Location = new System.Drawing.Point(253, 251);
+            this.lblAdUyari.Name = "lblAdUyari";
+            this.lblAdUyari.Size = new System.Drawing.Size(19, 25);
+            this.lblAdUyari.TabIndex = 14;
+            this.lblAdUyari.Text = "!";
+            // 
             // btnEkle
             // 
             this.btnEkle.BackgroundImage = global::AkaStormProje.Properties.Resources.BtnLeave;
@@ -134,6 +199,7 @@
             this.btnEkle.TabIndex = 13;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             this.btnEkle.MouseLeave += new System.EventHandler(this.btnEkle_MouseLeave);
             this.btnEkle.MouseHover += new System.EventHandler(this.btnEkle_MouseHover);
             // 
@@ -155,6 +221,7 @@
             this.txtResimYolu.ReadOnly = true;
             this.txtResimYolu.Size = new System.Drawing.Size(99, 20);
             this.txtResimYolu.TabIndex = 11;
+            this.txtResimYolu.TextChanged += new System.EventHandler(this.txtResimYolu_TextChanged);
             // 
             // txtFiyat
             // 
@@ -162,6 +229,7 @@
             this.txtFiyat.Name = "txtFiyat";
             this.txtFiyat.Size = new System.Drawing.Size(131, 20);
             this.txtFiyat.TabIndex = 10;
+            this.txtFiyat.TextChanged += new System.EventHandler(this.txtFiyat_TextChanged);
             this.txtFiyat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFiyat_KeyPress);
             // 
             // cmbKategori
@@ -174,14 +242,17 @@
             this.cmbKategori.Name = "cmbKategori";
             this.cmbKategori.Size = new System.Drawing.Size(131, 21);
             this.cmbKategori.TabIndex = 9;
+            this.cmbKategori.SelectedIndexChanged += new System.EventHandler(this.cmbKategori_SelectedIndexChanged);
             // 
             // txtKonu
             // 
             this.txtKonu.Location = new System.Drawing.Point(116, 291);
+            this.txtKonu.MaxLength = 53;
             this.txtKonu.Name = "txtKonu";
             this.txtKonu.Size = new System.Drawing.Size(131, 54);
             this.txtKonu.TabIndex = 8;
             this.txtKonu.Text = "";
+            this.txtKonu.TextChanged += new System.EventHandler(this.txtKonu_TextChanged);
             this.txtKonu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKonu_KeyPress);
             // 
             // txtOyunAdi
@@ -190,6 +261,7 @@
             this.txtOyunAdi.Name = "txtOyunAdi";
             this.txtOyunAdi.Size = new System.Drawing.Size(131, 20);
             this.txtOyunAdi.TabIndex = 7;
+            this.txtOyunAdi.TextChanged += new System.EventHandler(this.txtOyunAdi_TextChanged);
             this.txtOyunAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOyunAdi_KeyPress);
             // 
             // pictureBox1
@@ -448,5 +520,10 @@
         private System.Windows.Forms.Button btnResimSec;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label lblAdUyari;
+        private System.Windows.Forms.Label lblResimUyari;
+        private System.Windows.Forms.Label lblFiyatUyari;
+        private System.Windows.Forms.Label lblKatUyari;
+        private System.Windows.Forms.Label lblKonuUyari;
     }
 }
