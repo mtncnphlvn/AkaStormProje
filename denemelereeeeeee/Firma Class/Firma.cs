@@ -8,7 +8,7 @@ namespace AkaStormProje
 {
     class Firma
     {
-        public static int firmaID;
+        public static int firmaID = 1;
         private string firmaAdi;
         private string firmaCeo;
         private string firmaEposta;

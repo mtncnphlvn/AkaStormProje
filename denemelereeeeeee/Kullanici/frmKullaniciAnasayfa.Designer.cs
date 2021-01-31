@@ -38,7 +38,7 @@
             this.btnKutuphane = new System.Windows.Forms.Button();
             this.btnAnasayfa = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkBakiye = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
             this.panUst.Controls.Add(this.btnKutuphane);
             this.panUst.Controls.Add(this.btnAnasayfa);
             this.panUst.Controls.Add(this.btnExit);
-            this.panUst.Controls.Add(this.linkLabel1);
+            this.panUst.Controls.Add(this.linkBakiye);
             this.panUst.Controls.Add(this.label4);
             this.panUst.Controls.Add(this.label10);
             this.panUst.Controls.Add(this.label1);
@@ -225,18 +225,19 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // linkLabel1
+            // linkBakiye
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Bold);
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
-            this.linkLabel1.Location = new System.Drawing.Point(401, 127);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(69, 12);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Bakiye Yükle";
+            this.linkBakiye.AutoSize = true;
+            this.linkBakiye.BackColor = System.Drawing.Color.Transparent;
+            this.linkBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Bold);
+            this.linkBakiye.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.linkBakiye.Location = new System.Drawing.Point(401, 127);
+            this.linkBakiye.Name = "linkBakiye";
+            this.linkBakiye.Size = new System.Drawing.Size(69, 12);
+            this.linkBakiye.TabIndex = 4;
+            this.linkBakiye.TabStop = true;
+            this.linkBakiye.Text = "Bakiye Yükle";
+            this.linkBakiye.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBakiye_LinkClicked);
             // 
             // label4
             // 
@@ -307,7 +308,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkBakiye;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnProfil;
         private System.Windows.Forms.Button btnGoruslerim;

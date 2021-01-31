@@ -69,6 +69,8 @@
     </Compile>
     <Compile Include="Kullanici Class\Kullanici.cs" />
     <Compile Include="Kullanici Class\KullaniciYonetici.cs" />
+    <Compile Include="Kullanici Class\KullaniciYorum.cs" />
+    <Compile Include="Kullanici Class\KullaniciKutuphane.cs" />
     <Compile Include="Ortak\frmSozlesme.cs">
       <SubType>Form</SubType>
     </Compile>

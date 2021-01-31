@@ -37,7 +37,7 @@ namespace AkaStormProje
                 this.SetDesktopLocation(MousePosition.X - mouse_x, MousePosition.Y - mouse_y);
             }
         }
-        private void KullaniciBilgi()
+        public void KullaniciBilgi()
         {
             pbResim.SizeMode = PictureBoxSizeMode.StretchImage;
             VeritabaniYonetici veritabaniYonetici = new VeritabaniYonetici();
@@ -75,9 +75,11 @@ namespace AkaStormProje
         //--------------------------form load--------------------------------------------------
         private void frmKullaniciAnasayfa_Load(object sender, EventArgs e)
         {
-            KullaniciBilgi();
             frmOyunListele oyunListele = new frmOyunListele();
+            oyunListele.frmKullaniciAnasayfa = this;
+            KullaniciBilgi();            
             FormGetir(oyunListele);
+            
         }
         //-----------------------------btnExit-------------------------------------
         private void btnExit_Click(object sender, EventArgs e)
@@ -140,6 +142,13 @@ namespace AkaStormProje
         {
             frmKullaniciProfil kullaniciProfil = new frmKullaniciProfil();
             FormGetir(kullaniciProfil);
+        }
+        //--------------------------bakiye ekleme butonu---------------------------------------
+        private void linkBakiye_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            KullaniciYonetici kullaniciYonetici = new KullaniciYonetici();
+            kullaniciYonetici.BakiyeEkle();
+            KullaniciBilgi();
         }
     }
 }

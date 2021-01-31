@@ -38,7 +38,7 @@ namespace AkaStormProje
             }
         }
         //----------------------------------Anasayfa Giren kişinin bilgilerini yazdırma-------------------------------------------
-        private void FirmaBilgi()
+        public void FirmaBilgi()
         {
             pbResim.SizeMode = PictureBoxSizeMode.StretchImage;
             VeritabaniYonetici veritabaniYonetici = new VeritabaniYonetici();
@@ -142,7 +142,17 @@ namespace AkaStormProje
         private void btnProfil_Click(object sender, EventArgs e)
         {
             frmFirmaProfil firmaProfil = new frmFirmaProfil();
+
+            firmaProfil.frmAna = this;
+
             FormGetir(firmaProfil);
+        }
+
+        private void linkBakiye_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FirmaYonetici firmaYonetici = new FirmaYonetici();
+            firmaYonetici.BakiyeEkle();
+            FirmaBilgi();
         }
     }
 }

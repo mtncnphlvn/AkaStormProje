@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOyunEkle));
             this.panSag = new System.Windows.Forms.Panel();
+            this.lblSozlesmeUari = new System.Windows.Forms.Label();
+            this.chxOnay = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblResimUyari = new System.Windows.Forms.Label();
             this.lblFiyatUyari = new System.Windows.Forms.Label();
@@ -63,6 +65,7 @@
             this.pbOyunResim = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panSag.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -74,6 +77,8 @@
             // panSag
             // 
             this.panSag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.panSag.Controls.Add(this.lblSozlesmeUari);
+            this.panSag.Controls.Add(this.chxOnay);
             this.panSag.Controls.Add(this.groupBox1);
             this.panSag.Controls.Add(this.panel3);
             this.panSag.Location = new System.Drawing.Point(0, 0);
@@ -81,9 +86,34 @@
             this.panSag.Size = new System.Drawing.Size(950, 650);
             this.panSag.TabIndex = 1;
             // 
+            // lblSozlesmeUari
+            // 
+            this.lblSozlesmeUari.AutoSize = true;
+            this.lblSozlesmeUari.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSozlesmeUari.ForeColor = System.Drawing.Color.Red;
+            this.lblSozlesmeUari.Location = new System.Drawing.Point(606, 611);
+            this.lblSozlesmeUari.Name = "lblSozlesmeUari";
+            this.lblSozlesmeUari.Size = new System.Drawing.Size(19, 25);
+            this.lblSozlesmeUari.TabIndex = 19;
+            this.lblSozlesmeUari.Text = "!";
+            // 
+            // chxOnay
+            // 
+            this.chxOnay.AutoSize = true;
+            this.chxOnay.BackColor = System.Drawing.Color.Transparent;
+            this.chxOnay.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chxOnay.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chxOnay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.chxOnay.Location = new System.Drawing.Point(339, 615);
+            this.chxOnay.Name = "chxOnay";
+            this.chxOnay.Size = new System.Drawing.Size(261, 23);
+            this.chxOnay.TabIndex = 17;
+            this.chxOnay.Text = "SÖZLEŞMEYİ KABUL EDİYORUM!!";
+            this.chxOnay.UseVisualStyleBackColor = false;
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.richTextBox2);
+            this.groupBox1.Controls.Add(this.richTextBox1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(332, 45);
             this.groupBox1.Name = "groupBox1";
@@ -91,15 +121,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "AkaStorm Oyun Sözleşmesi";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
-            this.richTextBox2.Location = new System.Drawing.Point(7, 29);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(572, 520);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
             // 
             // panel3
             // 
@@ -282,6 +303,7 @@
             this.label11.Size = new System.Drawing.Size(71, 28);
             this.label11.TabIndex = 5;
             this.label11.Text = "Resim :";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label7
             // 
@@ -466,6 +488,17 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "Geliştirici :";
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.richTextBox1.Location = new System.Drawing.Point(7, 21);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(578, 533);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
             // frmOyunEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -478,6 +511,7 @@
             this.Text = "frmOyunEkle";
             this.Load += new System.EventHandler(this.frmOyunEkle_Load);
             this.panSag.ResumeLayout(false);
+            this.panSag.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -519,11 +553,13 @@
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnResimSec;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label lblAdUyari;
         private System.Windows.Forms.Label lblResimUyari;
         private System.Windows.Forms.Label lblFiyatUyari;
         private System.Windows.Forms.Label lblKatUyari;
         private System.Windows.Forms.Label lblKonuUyari;
+        private System.Windows.Forms.CheckBox chxOnay;
+        private System.Windows.Forms.Label lblSozlesmeUari;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

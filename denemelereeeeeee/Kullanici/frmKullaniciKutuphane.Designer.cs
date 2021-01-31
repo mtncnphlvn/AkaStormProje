@@ -32,43 +32,28 @@
             this.panSag = new System.Windows.Forms.Panel();
             this.btnYorum = new System.Windows.Forms.Button();
             this.btnPuan = new System.Windows.Forms.Button();
-            this.lblFiyat = new System.Windows.Forms.Label();
             this.lblPuan = new System.Windows.Forms.Label();
             this.lblKategori = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblYil = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKonu = new System.Windows.Forms.RichTextBox();
             this.txtOyunAdi = new System.Windows.Forms.RichTextBox();
             this.lblGelistirici = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pbOyunResim = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panSol = new System.Windows.Forms.Panel();
             this.panFiltre = new System.Windows.Forms.Panel();
             this.btnFiltreExit = new System.Windows.Forms.Button();
             this.btnFiltre2 = new System.Windows.Forms.Button();
-            this.cmbFiyat2 = new System.Windows.Forms.ComboBox();
-            this.cmbFiyat1 = new System.Windows.Forms.ComboBox();
-            this.cmbYil2 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cmbYil1 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.cmbKategoriFiltre = new System.Windows.Forms.ComboBox();
             this.cmbGenel = new System.Windows.Forms.ComboBox();
             this.btnFiltre = new System.Windows.Forms.Button();
             this.txtAdFiltre = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panSag.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOyunResim)).BeginInit();
             this.panSol.SuspendLayout();
             this.panFiltre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -79,18 +64,14 @@
             this.panSag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.panSag.Controls.Add(this.btnYorum);
             this.panSag.Controls.Add(this.btnPuan);
-            this.panSag.Controls.Add(this.lblFiyat);
             this.panSag.Controls.Add(this.lblPuan);
             this.panSag.Controls.Add(this.lblKategori);
-            this.panSag.Controls.Add(this.label6);
             this.panSag.Controls.Add(this.label2);
-            this.panSag.Controls.Add(this.lblYil);
             this.panSag.Controls.Add(this.label4);
             this.panSag.Controls.Add(this.txtKonu);
             this.panSag.Controls.Add(this.txtOyunAdi);
             this.panSag.Controls.Add(this.lblGelistirici);
-            this.panSag.Controls.Add(this.pictureBox1);
-            this.panSag.Controls.Add(this.label5);
+            this.panSag.Controls.Add(this.pbOyunResim);
             this.panSag.Controls.Add(this.label3);
             this.panSag.Location = new System.Drawing.Point(950, 0);
             this.panSag.Name = "panSag";
@@ -142,21 +123,11 @@
             this.btnPuan.MouseLeave += new System.EventHandler(this.btnPuan_MouseLeave);
             this.btnPuan.MouseHover += new System.EventHandler(this.btnPuan_MouseHover);
             // 
-            // lblFiyat
-            // 
-            this.lblFiyat.AutoSize = true;
-            this.lblFiyat.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.lblFiyat.Location = new System.Drawing.Point(117, 517);
-            this.lblFiyat.Name = "lblFiyat";
-            this.lblFiyat.Size = new System.Drawing.Size(50, 15);
-            this.lblFiyat.TabIndex = 28;
-            this.lblFiyat.Text = "label10";
-            // 
             // lblPuan
             // 
             this.lblPuan.AutoSize = true;
             this.lblPuan.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.lblPuan.Location = new System.Drawing.Point(117, 489);
+            this.lblPuan.Location = new System.Drawing.Point(117, 462);
             this.lblPuan.Name = "lblPuan";
             this.lblPuan.Size = new System.Drawing.Size(44, 15);
             this.lblPuan.TabIndex = 27;
@@ -172,16 +143,6 @@
             this.lblKategori.TabIndex = 20;
             this.lblKategori.Text = "label3";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label6.Location = new System.Drawing.Point(48, 509);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 28);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Fiyat :";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -192,21 +153,11 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Kategori :";
             // 
-            // lblYil
-            // 
-            this.lblYil.AutoSize = true;
-            this.lblYil.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.lblYil.Location = new System.Drawing.Point(117, 462);
-            this.lblYil.Name = "lblYil";
-            this.lblYil.Size = new System.Drawing.Size(44, 15);
-            this.lblYil.TabIndex = 26;
-            this.lblYil.Text = "label8";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label4.Location = new System.Drawing.Point(47, 481);
+            this.label4.Location = new System.Drawing.Point(47, 454);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 28);
             this.label4.TabIndex = 22;
@@ -244,24 +195,14 @@
             this.lblGelistirici.TabIndex = 25;
             this.lblGelistirici.Text = "label7";
             // 
-            // pictureBox1
+            // pbOyunResim
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 184);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label5.Location = new System.Drawing.Point(67, 454);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 28);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Yıl :";
+            this.pbOyunResim.BackColor = System.Drawing.Color.White;
+            this.pbOyunResim.Location = new System.Drawing.Point(29, 12);
+            this.pbOyunResim.Name = "pbOyunResim";
+            this.pbOyunResim.Size = new System.Drawing.Size(189, 184);
+            this.pbOyunResim.TabIndex = 16;
+            this.pbOyunResim.TabStop = false;
             // 
             // label3
             // 
@@ -292,19 +233,13 @@
             this.panFiltre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.panFiltre.Controls.Add(this.btnFiltreExit);
             this.panFiltre.Controls.Add(this.btnFiltre2);
-            this.panFiltre.Controls.Add(this.cmbFiyat2);
-            this.panFiltre.Controls.Add(this.cmbFiyat1);
-            this.panFiltre.Controls.Add(this.cmbYil2);
-            this.panFiltre.Controls.Add(this.label11);
-            this.panFiltre.Controls.Add(this.cmbYil1);
-            this.panFiltre.Controls.Add(this.label10);
-            this.panFiltre.Controls.Add(this.label9);
             this.panFiltre.Controls.Add(this.label8);
             this.panFiltre.Controls.Add(this.label12);
+            this.panFiltre.Controls.Add(this.cmbKategoriFiltre);
             this.panFiltre.Controls.Add(this.cmbGenel);
-            this.panFiltre.Location = new System.Drawing.Point(404, 51);
+            this.panFiltre.Location = new System.Drawing.Point(577, 75);
             this.panFiltre.Name = "panFiltre";
-            this.panFiltre.Size = new System.Drawing.Size(363, 133);
+            this.panFiltre.Size = new System.Drawing.Size(232, 111);
             this.panFiltre.TabIndex = 11;
             // 
             // btnFiltreExit
@@ -316,7 +251,7 @@
             this.btnFiltreExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltreExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltreExit.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnFiltreExit.Location = new System.Drawing.Point(344, 1);
+            this.btnFiltreExit.Location = new System.Drawing.Point(212, 1);
             this.btnFiltreExit.Name = "btnFiltreExit";
             this.btnFiltreExit.Size = new System.Drawing.Size(18, 23);
             this.btnFiltreExit.TabIndex = 10;
@@ -334,108 +269,46 @@
             this.btnFiltre2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnFiltre2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltre2.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.btnFiltre2.Location = new System.Drawing.Point(235, 92);
+            this.btnFiltre2.Location = new System.Drawing.Point(60, 70);
             this.btnFiltre2.Name = "btnFiltre2";
             this.btnFiltre2.Size = new System.Drawing.Size(89, 34);
             this.btnFiltre2.TabIndex = 4;
             this.btnFiltre2.Text = "Filtrele";
             this.btnFiltre2.UseVisualStyleBackColor = true;
+            this.btnFiltre2.Click += new System.EventHandler(this.btnFiltre2_Click);
             this.btnFiltre2.MouseLeave += new System.EventHandler(this.btnFiltre2_MouseLeave);
             this.btnFiltre2.MouseHover += new System.EventHandler(this.btnFiltre2_MouseHover);
-            // 
-            // cmbFiyat2
-            // 
-            this.cmbFiyat2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.cmbFiyat2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFiyat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbFiyat2.FormattingEnabled = true;
-            this.cmbFiyat2.Location = new System.Drawing.Point(291, 63);
-            this.cmbFiyat2.Name = "cmbFiyat2";
-            this.cmbFiyat2.Size = new System.Drawing.Size(57, 21);
-            this.cmbFiyat2.TabIndex = 3;
-            // 
-            // cmbFiyat1
-            // 
-            this.cmbFiyat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.cmbFiyat1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFiyat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbFiyat1.FormattingEnabled = true;
-            this.cmbFiyat1.Location = new System.Drawing.Point(209, 63);
-            this.cmbFiyat1.Name = "cmbFiyat1";
-            this.cmbFiyat1.Size = new System.Drawing.Size(57, 21);
-            this.cmbFiyat1.TabIndex = 3;
-            // 
-            // cmbYil2
-            // 
-            this.cmbYil2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.cmbYil2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbYil2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbYil2.FormattingEnabled = true;
-            this.cmbYil2.Location = new System.Drawing.Point(291, 27);
-            this.cmbYil2.Name = "cmbYil2";
-            this.cmbYil2.Size = new System.Drawing.Size(57, 21);
-            this.cmbYil2.TabIndex = 3;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(265, 56);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 31);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "-";
-            // 
-            // cmbYil1
-            // 
-            this.cmbYil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.cmbYil1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbYil1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbYil1.FormattingEnabled = true;
-            this.cmbYil1.Location = new System.Drawing.Point(209, 27);
-            this.cmbYil1.Name = "cmbYil1";
-            this.cmbYil1.Size = new System.Drawing.Size(57, 21);
-            this.cmbYil1.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(171, 66);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 21);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Fiyat :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(265, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 31);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "-";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(179, 30);
+            this.label8.Location = new System.Drawing.Point(3, 37);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 21);
+            this.label8.Size = new System.Drawing.Size(70, 21);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Yıl :";
+            this.label8.Text = "Kategori :";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(16, 45);
+            this.label12.Location = new System.Drawing.Point(23, 3);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 21);
             this.label12.TabIndex = 1;
             this.label12.Text = "Filtre :";
+            // 
+            // cmbKategoriFiltre
+            // 
+            this.cmbKategoriFiltre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.cmbKategoriFiltre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbKategoriFiltre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbKategoriFiltre.FormattingEnabled = true;
+            this.cmbKategoriFiltre.Location = new System.Drawing.Point(79, 38);
+            this.cmbKategoriFiltre.Name = "cmbKategoriFiltre";
+            this.cmbKategoriFiltre.Size = new System.Drawing.Size(93, 21);
+            this.cmbKategoriFiltre.TabIndex = 0;
             // 
             // cmbGenel
             // 
@@ -445,17 +318,12 @@
             this.cmbGenel.FormattingEnabled = true;
             this.cmbGenel.Items.AddRange(new object[] {
             "İsim (A-Z)",
-            "İsim (Z-A)",
-            "Fiyat (En Yüksek)",
-            "Fiyat (En Düşük)",
-            "Yıl (En Yeni)",
-            "Yıl (En Eski)",
-            "Puan (En Yüksek)",
-            "Puan (En Düşük)"});
-            this.cmbGenel.Location = new System.Drawing.Point(72, 46);
+            "İsim (Z-A)"});
+            this.cmbGenel.Location = new System.Drawing.Point(79, 4);
             this.cmbGenel.Name = "cmbGenel";
             this.cmbGenel.Size = new System.Drawing.Size(93, 21);
             this.cmbGenel.TabIndex = 0;
+            this.cmbGenel.SelectedIndexChanged += new System.EventHandler(this.cmbGenel_SelectedIndexChanged);
             // 
             // btnFiltre
             // 
@@ -467,7 +335,7 @@
             this.btnFiltre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltre.Font = new System.Drawing.Font("Segoe Print", 13F, System.Drawing.FontStyle.Bold);
-            this.btnFiltre.Location = new System.Drawing.Point(670, 140);
+            this.btnFiltre.Location = new System.Drawing.Point(713, 142);
             this.btnFiltre.Name = "btnFiltre";
             this.btnFiltre.Size = new System.Drawing.Size(96, 44);
             this.btnFiltre.TabIndex = 10;
@@ -490,6 +358,7 @@
             this.txtAdFiltre.TabIndex = 9;
             this.txtAdFiltre.Text = "İsme göre ara";
             this.txtAdFiltre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAdFiltre.TextChanged += new System.EventHandler(this.txtAdFiltre_TextChanged);
             this.txtAdFiltre.Enter += new System.EventHandler(this.txtAdFiltre_Enter);
             this.txtAdFiltre.Leave += new System.EventHandler(this.txtAdFiltre_Leave);
             // 
@@ -498,44 +367,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column6});
             this.dataGridView1.GridColor = System.Drawing.Color.RosyBrown;
-            this.dataGridView1.Location = new System.Drawing.Point(155, 190);
+            this.dataGridView1.Location = new System.Drawing.Point(134, 192);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(611, 440);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(675, 440);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Oyun Adı";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 120;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Konu";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Kategori";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Geliştirici";
-            this.Column4.Name = "Column4";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Puan";
-            this.Column6.Name = "Column6";
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // frmKullaniciKutuphane
             // 
@@ -551,7 +390,7 @@
             this.Load += new System.EventHandler(this.frmKullaniciKutuphane_Load);
             this.panSag.ResumeLayout(false);
             this.panSag.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOyunResim)).EndInit();
             this.panSol.ResumeLayout(false);
             this.panSol.PerformLayout();
             this.panFiltre.ResumeLayout(false);
@@ -567,39 +406,24 @@
         private System.Windows.Forms.Panel panSag;
         private System.Windows.Forms.Button btnYorum;
         private System.Windows.Forms.Button btnPuan;
-        private System.Windows.Forms.Label lblFiyat;
         private System.Windows.Forms.Label lblPuan;
         private System.Windows.Forms.Label lblKategori;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblYil;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox txtKonu;
         private System.Windows.Forms.RichTextBox txtOyunAdi;
         private System.Windows.Forms.Label lblGelistirici;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pbOyunResim;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.TextBox txtAdFiltre;
         private System.Windows.Forms.Button btnFiltre;
         private System.Windows.Forms.Panel panFiltre;
         private System.Windows.Forms.Button btnFiltreExit;
         private System.Windows.Forms.Button btnFiltre2;
-        private System.Windows.Forms.ComboBox cmbFiyat2;
-        private System.Windows.Forms.ComboBox cmbFiyat1;
-        private System.Windows.Forms.ComboBox cmbYil2;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox cmbYil1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox cmbGenel;
+        private System.Windows.Forms.ComboBox cmbKategoriFiltre;
     }
 }

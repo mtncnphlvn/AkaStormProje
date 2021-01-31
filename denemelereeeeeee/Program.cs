@@ -16,7 +16,7 @@ namespace AkaStormProje
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGirisEkrani());
+            Application.Run(new frmKullaniciAnasayfa());
         }
     }
 }

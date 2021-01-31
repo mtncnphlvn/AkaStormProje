@@ -43,18 +43,18 @@
             this.panSol = new System.Windows.Forms.Panel();
             this.txtAdFiltre = new System.Windows.Forms.TextBox();
             this.panFiltre = new System.Windows.Forms.Panel();
+            this.cmbKategoriFiltre = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnFiltreExit = new System.Windows.Forms.Button();
             this.btnFiltre2 = new System.Windows.Forms.Button();
+            this.cmbFiyat2 = new System.Windows.Forms.ComboBox();
+            this.cmbFiyat1 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbGenel = new System.Windows.Forms.ComboBox();
             this.btnFiltre = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbKategoriFiltre = new System.Windows.Forms.ComboBox();
-            this.cmbFiyat2 = new System.Windows.Forms.ComboBox();
-            this.cmbFiyat1 = new System.Windows.Forms.ComboBox();
             this.panSag.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOyunResim)).BeginInit();
             this.panSol.SuspendLayout();
@@ -235,6 +235,26 @@
             this.panFiltre.Size = new System.Drawing.Size(232, 133);
             this.panFiltre.TabIndex = 4;
             // 
+            // cmbKategoriFiltre
+            // 
+            this.cmbKategoriFiltre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbKategoriFiltre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbKategoriFiltre.FormattingEnabled = true;
+            this.cmbKategoriFiltre.Location = new System.Drawing.Point(79, 33);
+            this.cmbKategoriFiltre.Name = "cmbKategoriFiltre";
+            this.cmbKategoriFiltre.Size = new System.Drawing.Size(93, 21);
+            this.cmbKategoriFiltre.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(3, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 21);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Kategori :";
+            // 
             // btnFiltreExit
             // 
             this.btnFiltreExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
@@ -272,6 +292,44 @@
             this.btnFiltre2.Click += new System.EventHandler(this.btnFiltre2_Click);
             this.btnFiltre2.MouseLeave += new System.EventHandler(this.btnFiltre2_MouseLeave);
             this.btnFiltre2.MouseHover += new System.EventHandler(this.btnFiltre2_MouseHover);
+            // 
+            // cmbFiyat2
+            // 
+            this.cmbFiyat2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.cmbFiyat2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiyat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbFiyat2.FormattingEnabled = true;
+            this.cmbFiyat2.Items.AddRange(new object[] {
+            "0",
+            "10",
+            "20",
+            "50",
+            "100",
+            "200",
+            "500"});
+            this.cmbFiyat2.Location = new System.Drawing.Point(159, 65);
+            this.cmbFiyat2.Name = "cmbFiyat2";
+            this.cmbFiyat2.Size = new System.Drawing.Size(57, 21);
+            this.cmbFiyat2.TabIndex = 3;
+            // 
+            // cmbFiyat1
+            // 
+            this.cmbFiyat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
+            this.cmbFiyat1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiyat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbFiyat1.FormattingEnabled = true;
+            this.cmbFiyat1.Items.AddRange(new object[] {
+            "0",
+            "10",
+            "20",
+            "50",
+            "100",
+            "200",
+            "500"});
+            this.cmbFiyat1.Location = new System.Drawing.Point(79, 65);
+            this.cmbFiyat1.Name = "cmbFiyat1";
+            this.cmbFiyat1.Size = new System.Drawing.Size(57, 21);
+            this.cmbFiyat1.TabIndex = 3;
             // 
             // label11
             // 
@@ -351,69 +409,9 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(814, 440);
+            this.dataGridView1.Size = new System.Drawing.Size(820, 440);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(3, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 21);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Kategori :";
-            // 
-            // cmbKategoriFiltre
-            // 
-            this.cmbKategoriFiltre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.cmbKategoriFiltre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbKategoriFiltre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbKategoriFiltre.FormattingEnabled = true;
-            this.cmbKategoriFiltre.Location = new System.Drawing.Point(79, 35);
-            this.cmbKategoriFiltre.Name = "cmbKategoriFiltre";
-            this.cmbKategoriFiltre.Size = new System.Drawing.Size(93, 21);
-            this.cmbKategoriFiltre.TabIndex = 13;
-            this.cmbKategoriFiltre.SelectedIndexChanged += new System.EventHandler(this.cmbKategoriFiltre_SelectedIndexChanged);
-            // 
-            // cmbFiyat2
-            // 
-            this.cmbFiyat2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.cmbFiyat2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFiyat2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbFiyat2.FormattingEnabled = true;
-            this.cmbFiyat2.Items.AddRange(new object[] {
-            "0",
-            "10",
-            "20",
-            "50",
-            "100",
-            "200",
-            "500"});
-            this.cmbFiyat2.Location = new System.Drawing.Point(159, 65);
-            this.cmbFiyat2.Name = "cmbFiyat2";
-            this.cmbFiyat2.Size = new System.Drawing.Size(57, 21);
-            this.cmbFiyat2.TabIndex = 3;
-            // 
-            // cmbFiyat1
-            // 
-            this.cmbFiyat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(225)))), ((int)(((byte)(233)))));
-            this.cmbFiyat1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFiyat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbFiyat1.FormattingEnabled = true;
-            this.cmbFiyat1.Items.AddRange(new object[] {
-            "0",
-            "10",
-            "20",
-            "50",
-            "100",
-            "200",
-            "500"});
-            this.cmbFiyat1.Location = new System.Drawing.Point(79, 65);
-            this.cmbFiyat1.Name = "cmbFiyat1";
-            this.cmbFiyat1.Size = new System.Drawing.Size(57, 21);
-            this.cmbFiyat1.TabIndex = 3;
             // 
             // frmFirmaOyunListele
             // 
@@ -462,9 +460,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnFiltreExit;
-        private System.Windows.Forms.ComboBox cmbKategoriFiltre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbFiyat2;
         private System.Windows.Forms.ComboBox cmbFiyat1;
+        private System.Windows.Forms.ComboBox cmbKategoriFiltre;
     }
 }

@@ -56,19 +56,16 @@ namespace AkaStormProje
         {
             textDoldur.TextLeave(txtAdFiltre, "İsme göre ara");
         }
-
-        private void btnFiltre_Click(object sender, EventArgs e)
-        {
-            panFiltre.Visible = true;
-        }
         private void txtAdFiltre_TextChanged(object sender, EventArgs e)
         {
-            oyunYonetici.OyunListele(dataGridView1,txtAdFiltre);
+            oyunYonetici.OyunListele(dataGridView1, txtAdFiltre);
             if (txtAdFiltre.Text == "İsme göre ara")
             {
                 oyunYonetici.OyunListele(dataGridView1);
             }
         }
+      
+      
         //-----------------------btnFiltre Olaylar----------------------------------------
         private void btnFiltre_MouseHover(object sender, EventArgs e)
         {
@@ -77,6 +74,10 @@ namespace AkaStormProje
         private void btnFiltre_MouseLeave(object sender, EventArgs e)
         {
             btnFiltre.BackgroundImage = Properties.Resources.btnFiltre1;
+        }
+        private void btnFiltre_Click(object sender, EventArgs e)
+        {
+            panFiltre.Visible = true;
         }
         //-----------------------btnFiltre2 Olaylar----------------------------------------
         private void btnFiltre2_MouseHover(object sender, EventArgs e)
@@ -113,10 +114,7 @@ namespace AkaStormProje
             {
                 oyunYonetici.FiyatAralik(dataGridView1, cmbFiyat1, cmbFiyat2);
             }
-
-
         }
-
         private void cmbKategoriFiltre_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbFiyat1.SelectedIndex = 0;

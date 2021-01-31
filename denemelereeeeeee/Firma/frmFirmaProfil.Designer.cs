@@ -32,6 +32,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnEkle = new System.Windows.Forms.Button();
+            this.btnResimSec = new System.Windows.Forms.Button();
+            this.txtResimYolu = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.pbFirmaResim = new System.Windows.Forms.PictureBox();
             this.lblTelefon = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +47,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblPuan = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblonay = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -81,6 +86,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.panel2.Controls.Add(this.lblonay);
+            this.panel2.Controls.Add(this.btnEkle);
+            this.panel2.Controls.Add(this.btnResimSec);
+            this.panel2.Controls.Add(this.txtResimYolu);
+            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.pbFirmaResim);
             this.panel2.Controls.Add(this.lblTelefon);
             this.panel2.Controls.Add(this.label2);
@@ -96,6 +106,56 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(335, 650);
             this.panel2.TabIndex = 14;
+            // 
+            // btnEkle
+            // 
+            this.btnEkle.BackgroundImage = global::AkaStormProje.Properties.Resources.BtnLeave;
+            this.btnEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEkle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnEkle.FlatAppearance.BorderSize = 0;
+            this.btnEkle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnEkle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEkle.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.btnEkle.Location = new System.Drawing.Point(92, 476);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(116, 51);
+            this.btnEkle.TabIndex = 17;
+            this.btnEkle.Text = "Güncelle";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            this.btnEkle.MouseLeave += new System.EventHandler(this.btnEkle_MouseLeave);
+            this.btnEkle.MouseHover += new System.EventHandler(this.btnEkle_MouseHover);
+            // 
+            // btnResimSec
+            // 
+            this.btnResimSec.Location = new System.Drawing.Point(244, 425);
+            this.btnResimSec.Name = "btnResimSec";
+            this.btnResimSec.Size = new System.Drawing.Size(31, 22);
+            this.btnResimSec.TabIndex = 16;
+            this.btnResimSec.Text = "...";
+            this.btnResimSec.UseVisualStyleBackColor = true;
+            this.btnResimSec.Click += new System.EventHandler(this.btnResimSec_Click);
+            // 
+            // txtResimYolu
+            // 
+            this.txtResimYolu.BackColor = System.Drawing.SystemColors.Window;
+            this.txtResimYolu.Location = new System.Drawing.Point(144, 426);
+            this.txtResimYolu.Name = "txtResimYolu";
+            this.txtResimYolu.ReadOnly = true;
+            this.txtResimYolu.Size = new System.Drawing.Size(99, 20);
+            this.txtResimYolu.TabIndex = 15;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe Print", 12F);
+            this.label11.Location = new System.Drawing.Point(67, 420);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 28);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Resim :";
             // 
             // pbFirmaResim
             // 
@@ -206,6 +266,15 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Puan :";
             // 
+            // lblonay
+            // 
+            this.lblonay.AutoSize = true;
+            this.lblonay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblonay.Location = new System.Drawing.Point(89, 583);
+            this.lblonay.Name = "lblonay";
+            this.lblonay.Size = new System.Drawing.Size(0, 17);
+            this.lblonay.TabIndex = 18;
+            // 
             // frmFirmaProfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,5 +311,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnResimSec;
+        private System.Windows.Forms.TextBox txtResimYolu;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.Label lblonay;
     }
 }

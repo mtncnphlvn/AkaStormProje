@@ -70,6 +70,22 @@ namespace AkaStormProje
             }
             return giris;
         }
+        public void ResimGuncelle(string resim, Label label)
+        {
+            string sorgu = "update firma_resim set firma_resim='" + MySql.Data.MySqlClient.MySqlHelper.EscapeString(resim) + "' where firma_id='"+Firma.firmaID+"'";
+            MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+            MySqlDataReader reader;
+            reader = komut.ExecuteReader();
+            label.Text = "Başarıyla Günellendi.";
+            veritabaniYonetici.CloseConnection();
+        }
+        public void BakiyeEkle()
+        {
+            string sorgu = "insert into firma_bakiye(firma_id,firma_bakiye) values ('"+Firma.firmaID+"',100)";
+            MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+            komut.ExecuteReader();
+            veritabaniYonetici.CloseConnection();          
+        }
 
     }
 }

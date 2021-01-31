@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFirmaAnasayfa));
             this.panAlt = new System.Windows.Forms.Panel();
             this.panUst = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkBakiye = new System.Windows.Forms.LinkLabel();
             this.pbResim = new System.Windows.Forms.PictureBox();
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -60,7 +60,7 @@
             // 
             this.panUst.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panUst.BackgroundImage")));
             this.panUst.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panUst.Controls.Add(this.linkLabel1);
+            this.panUst.Controls.Add(this.linkBakiye);
             this.panUst.Controls.Add(this.pbResim);
             this.panUst.Controls.Add(this.btnProfil);
             this.panUst.Controls.Add(this.btnExit);
@@ -81,18 +81,19 @@
             this.panUst.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panUst.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
-            // linkLabel1
+            // linkBakiye
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
-            this.linkLabel1.Location = new System.Drawing.Point(406, 126);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(69, 12);
-            this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Bakiye Yükle";
+            this.linkBakiye.AutoSize = true;
+            this.linkBakiye.BackColor = System.Drawing.Color.Transparent;
+            this.linkBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.linkBakiye.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.linkBakiye.Location = new System.Drawing.Point(406, 126);
+            this.linkBakiye.Name = "linkBakiye";
+            this.linkBakiye.Size = new System.Drawing.Size(69, 12);
+            this.linkBakiye.TabIndex = 0;
+            this.linkBakiye.TabStop = true;
+            this.linkBakiye.Text = "Bakiye Yükle";
+            this.linkBakiye.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBakiye_LinkClicked);
             // 
             // pbResim
             // 
@@ -318,7 +319,7 @@
         private System.Windows.Forms.PictureBox pbResim;
         private System.Windows.Forms.Panel panUst;
         private System.Windows.Forms.Panel panAlt;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkBakiye;
         private System.Windows.Forms.Label lblKullaniciAdi;
     }
 }

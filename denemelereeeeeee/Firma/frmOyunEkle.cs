@@ -36,6 +36,7 @@ namespace AkaStormProje
             lblResimUyari.Text = "";
             lblYil.Text = DateTime.Now.Year.ToString();
             lblFiyat.Text = "";
+            lblSozlesmeUari.Text = "";
 
         }
         public void TextTemizle()
@@ -156,6 +157,10 @@ namespace AkaStormProje
             {
                 lblResimUyari.Text = "!";
             }
+            else if (chxOnay.Checked == false)
+            {
+                lblSozlesmeUari.Text = "!";
+            }
             else
             {
                 Oyun oyun = new Oyun();
@@ -168,6 +173,11 @@ namespace AkaStormProje
                 oyunYonetici.OyunEkle(oyun);
                 TextTemizle();
             }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

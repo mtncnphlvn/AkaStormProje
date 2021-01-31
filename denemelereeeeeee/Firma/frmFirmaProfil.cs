@@ -19,6 +19,8 @@ namespace AkaStormProje
         }
         VeritabaniYonetici veritabaniYonetici = new VeritabaniYonetici();
 
+        public frmFirmaAnasayfa frmAna;
+
         private void FirmaBilgi()
         {
             pbFirmaResim.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -70,6 +72,41 @@ namespace AkaStormProje
         {
             FirmaBilgi();
             PuanBilgisi();
+            KullaniciYorum kullaniciYorum = new KullaniciYorum();
+            kullaniciYorum.Yorumlar(dataGridView1);
+            dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+        }
+
+        private void btnResimSec_Click(object sender, EventArgs e)
+        {
+            pbFirmaResim.SizeMode = PictureBoxSizeMode.StretchImage;
+            OpenFileDialog resim = new OpenFileDialog();
+            resim.Filter = "Resim Dosyası |*.jpg;*.nef;*.png;* |  Tüm Dosyalar |*.*";
+            resim.ShowDialog();
+            txtResimYolu.Text = resim.FileName;
+            pbFirmaResim.ImageLocation = resim.FileName.ToString();
+        }
+
+        private void btnEkle_MouseHover(object sender, EventArgs e)
+        {
+            btnEkle.BackgroundImage = Properties.Resources.BtnHvr;
+        }
+
+        private void btnEkle_MouseLeave(object sender, EventArgs e)
+        {
+            btnEkle.BackgroundImage = Properties.Resources.BtnLeave;
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            if (txtResimYolu.Text != "")
+            {
+                FirmaYonetici firmaYonetici = new FirmaYonetici();
+                string resimYolu = txtResimYolu.Text;
+                firmaYonetici.ResimGuncelle(resimYolu, lblonay);
+                frmAna.FirmaBilgi();
+            }
         }
     }
 }
