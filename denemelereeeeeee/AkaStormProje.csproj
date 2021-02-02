@@ -67,6 +67,19 @@
     <Compile Include="Firma\frmFirmaOyunListele.Designer.cs">
       <DependentUpon>frmFirmaOyunListele.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kullanici Class\KullaniciGuncelleme.cs" />
+    <Compile Include="Kullanici\frmKullaniciYorum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciYorum.Designer.cs">
+      <DependentUpon>frmKullaniciYorum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciPuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici\frmKullaniciPuan.Designer.cs">
+      <DependentUpon>frmKullaniciPuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kullanici Class\Kullanici.cs" />
     <Compile Include="Kullanici Class\KullaniciYonetici.cs" />
     <Compile Include="Kullanici Class\KullaniciYorum.cs" />
@@ -166,6 +179,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Firma\frmFirmaOyunListele.resx">
       <DependentUpon>frmFirmaOyunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciPuan.resx">
+      <DependentUpon>frmKullaniciPuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici\frmKullaniciYorum.resx">
+      <DependentUpon>frmKullaniciYorum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ortak\frmSozlesme.resx">
       <DependentUpon>frmSozlesme.cs</DependentUpon>

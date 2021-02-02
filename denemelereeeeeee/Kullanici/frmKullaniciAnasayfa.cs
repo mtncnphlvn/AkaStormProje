@@ -64,7 +64,7 @@ namespace AkaStormProje
 
         }
         //-----------------------------Diğer formları aynı form içinde açma methodu -------------------------------------------------
-        private void FormGetir(Form frm)
+        public void FormGetir(Form frm)
         {
             panAlt.Controls.Clear();
             frm.MdiParent = this;
@@ -141,6 +141,7 @@ namespace AkaStormProje
         private void btnProfil_Click(object sender, EventArgs e)
         {
             frmKullaniciProfil kullaniciProfil = new frmKullaniciProfil();
+            kullaniciProfil.frmKullaniciAnasayfa = this;
             FormGetir(kullaniciProfil);
         }
         //--------------------------bakiye ekleme butonu---------------------------------------

@@ -51,13 +51,11 @@
             this.lblKategori = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblYil = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKonu = new System.Windows.Forms.RichTextBox();
             this.txtOyunAdi = new System.Windows.Forms.RichTextBox();
             this.lblGelistirici = new System.Windows.Forms.Label();
             this.pbOyunResim = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panSol.SuspendLayout();
             this.panFiltre.SuspendLayout();
@@ -303,13 +301,11 @@
             this.panSag.Controls.Add(this.lblKategori);
             this.panSag.Controls.Add(this.label6);
             this.panSag.Controls.Add(this.label2);
-            this.panSag.Controls.Add(this.lblYil);
             this.panSag.Controls.Add(this.label4);
             this.panSag.Controls.Add(this.txtKonu);
             this.panSag.Controls.Add(this.txtOyunAdi);
             this.panSag.Controls.Add(this.lblGelistirici);
             this.panSag.Controls.Add(this.pbOyunResim);
-            this.panSag.Controls.Add(this.label5);
             this.panSag.Controls.Add(this.label3);
             this.panSag.Location = new System.Drawing.Point(950, 0);
             this.panSag.Name = "panSag";
@@ -320,7 +316,7 @@
             // 
             this.lblFiyat.AutoSize = true;
             this.lblFiyat.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.lblFiyat.Location = new System.Drawing.Point(119, 532);
+            this.lblFiyat.Location = new System.Drawing.Point(119, 504);
             this.lblFiyat.Name = "lblFiyat";
             this.lblFiyat.Size = new System.Drawing.Size(50, 15);
             this.lblFiyat.TabIndex = 15;
@@ -354,7 +350,7 @@
             // 
             this.lblPuan.AutoSize = true;
             this.lblPuan.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.lblPuan.Location = new System.Drawing.Point(119, 505);
+            this.lblPuan.Location = new System.Drawing.Point(119, 477);
             this.lblPuan.Name = "lblPuan";
             this.lblPuan.Size = new System.Drawing.Size(44, 15);
             this.lblPuan.TabIndex = 14;
@@ -374,7 +370,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label6.Location = new System.Drawing.Point(50, 524);
+            this.label6.Location = new System.Drawing.Point(50, 496);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 28);
             this.label6.TabIndex = 10;
@@ -390,21 +386,11 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Kategori :";
             // 
-            // lblYil
-            // 
-            this.lblYil.AutoSize = true;
-            this.lblYil.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.lblYil.Location = new System.Drawing.Point(119, 478);
-            this.lblYil.Name = "lblYil";
-            this.lblYil.Size = new System.Drawing.Size(44, 15);
-            this.lblYil.TabIndex = 13;
-            this.lblYil.Text = "label8";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label4.Location = new System.Drawing.Point(49, 497);
+            this.label4.Location = new System.Drawing.Point(49, 469);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 28);
             this.label4.TabIndex = 8;
@@ -451,16 +437,6 @@
             this.pbOyunResim.TabIndex = 1;
             this.pbOyunResim.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label5.Location = new System.Drawing.Point(69, 470);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 28);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Yıl :";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -503,7 +479,6 @@
         private System.Windows.Forms.PictureBox pbOyunResim;
         private System.Windows.Forms.Button btnSatinAl;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblKategori;
@@ -511,7 +486,6 @@
         private System.Windows.Forms.RichTextBox txtKonu;
         private System.Windows.Forms.Label lblFiyat;
         private System.Windows.Forms.Label lblPuan;
-        private System.Windows.Forms.Label lblYil;
         private System.Windows.Forms.Label lblGelistirici;
         private System.Windows.Forms.Button btnFiltre;
         private System.Windows.Forms.TextBox txtAdFiltre;

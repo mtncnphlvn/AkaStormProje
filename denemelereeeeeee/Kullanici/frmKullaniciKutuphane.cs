@@ -78,6 +78,7 @@ namespace AkaStormProje
         {
             panFiltre.Visible = false;
         }
+        //----------------------btnpuan ve yorum--------------------------------
         private void btnPuan_MouseHover(object sender, EventArgs e)
         {
             btnPuan.BackgroundImage = Properties.Resources.BtnHvr;
@@ -124,6 +125,17 @@ namespace AkaStormProje
             DatagridSecim();
         }
 
+        private void btnYorum_Click(object sender, EventArgs e)
+        {
+            frmKullaniciYorum frmKullaniciYorum = new frmKullaniciYorum();
+            frmKullaniciYorum.Show();
+            
+        }
 
+        private void btnPuan_Click(object sender, EventArgs e)
+        {
+            frmKullaniciPuan frmKullaniciPuan = new frmKullaniciPuan();
+            frmKullaniciPuan.Show();
+        }
     }
 }

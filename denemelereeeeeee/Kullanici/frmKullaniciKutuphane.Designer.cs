@@ -97,6 +97,7 @@
             this.btnYorum.Text = "Yorum Yap";
             this.btnYorum.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnYorum.UseVisualStyleBackColor = true;
+            this.btnYorum.Click += new System.EventHandler(this.btnYorum_Click);
             this.btnYorum.MouseLeave += new System.EventHandler(this.btnYorum_MouseLeave);
             this.btnYorum.MouseHover += new System.EventHandler(this.btnYorum_MouseHover);
             // 
@@ -120,6 +121,7 @@
             this.btnPuan.Text = "Puan Ver";
             this.btnPuan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPuan.UseVisualStyleBackColor = true;
+            this.btnPuan.Click += new System.EventHandler(this.btnPuan_Click);
             this.btnPuan.MouseLeave += new System.EventHandler(this.btnPuan_MouseLeave);
             this.btnPuan.MouseHover += new System.EventHandler(this.btnPuan_MouseHover);
             // 
@@ -237,7 +239,7 @@
             this.panFiltre.Controls.Add(this.label12);
             this.panFiltre.Controls.Add(this.cmbKategoriFiltre);
             this.panFiltre.Controls.Add(this.cmbGenel);
-            this.panFiltre.Location = new System.Drawing.Point(577, 75);
+            this.panFiltre.Location = new System.Drawing.Point(643, 75);
             this.panFiltre.Name = "panFiltre";
             this.panFiltre.Size = new System.Drawing.Size(232, 111);
             this.panFiltre.TabIndex = 11;
@@ -335,7 +337,7 @@
             this.btnFiltre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(0)))));
             this.btnFiltre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltre.Font = new System.Drawing.Font("Segoe Print", 13F, System.Drawing.FontStyle.Bold);
-            this.btnFiltre.Location = new System.Drawing.Point(713, 142);
+            this.btnFiltre.Location = new System.Drawing.Point(779, 142);
             this.btnFiltre.Name = "btnFiltre";
             this.btnFiltre.Size = new System.Drawing.Size(96, 44);
             this.btnFiltre.TabIndex = 10;
@@ -368,11 +370,11 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.RosyBrown;
-            this.dataGridView1.Location = new System.Drawing.Point(134, 192);
+            this.dataGridView1.Location = new System.Drawing.Point(84, 192);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(675, 440);
+            this.dataGridView1.Size = new System.Drawing.Size(791, 440);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 

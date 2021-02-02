@@ -16,5 +16,13 @@ namespace AkaStormProje
         {
             InitializeComponent();
         }
+
+        private void frmKullaniciGoruslerim_Load(object sender, EventArgs e)
+        {
+            KullaniciYorum kullaniciYorum = new KullaniciYorum();
+            kullaniciYorum.YorumlarKullanici(dataGridView1);
+            dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+        }
     }
 }
