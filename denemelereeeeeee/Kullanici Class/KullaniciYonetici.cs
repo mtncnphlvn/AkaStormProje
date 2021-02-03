@@ -71,6 +71,34 @@ namespace AkaStormProje
             return giris;
 
         }
+        public bool HesapKontrol(Kullanici kullanici)
+        {
+            bool giris = false;
+            try
+            {
+                string sorgu = "select * from kullanici where kul_kullaniciAdi='" + kullanici.getKullaniciKulAdi + "'";
+                MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+                MySqlDataReader reader;
+                reader = komut.ExecuteReader();
+                if (reader.Read())
+                {
+                    giris = false;
+                    MessageBox.Show("Kullanıcı sisteme kayıtlı.");
+                }
+                else
+                {
+                    giris = true;
+                }
+                veritabaniYonetici.CloseConnection();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata var : ", ex.Message);
+            }
+            return giris;
+
+        }
         public void BakiyeEkle()
         {
             string sorgu = "insert into kullanici_bakiye(kul_id,kul_bakiye) values ('"+Kullanici.kullaniciID+"',100)";

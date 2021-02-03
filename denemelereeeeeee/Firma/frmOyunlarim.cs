@@ -53,6 +53,7 @@ namespace AkaStormProje
         }
         public void DatagridSecim()
         {
+
             int sec = dataGridView1.SelectedCells[0].RowIndex;
             Oyun.oyunID = Convert.ToInt32(dataGridView1.Rows[sec].Cells[0].Value.ToString());
             oyunYonetici.OnizlemeResim(pbOyunResim);
@@ -63,10 +64,11 @@ namespace AkaStormProje
         }
         private void frmOyunlarim_Load(object sender, EventArgs e)
         {
+     
             pbOyunResim.SizeMode = PictureBoxSizeMode.StretchImage;
             FirmaBilgi();
             oyunYonetici.Oyunlarım(dataGridView1);
-            DatagridSecim();
+           // DatagridSecim();
 
         }
 

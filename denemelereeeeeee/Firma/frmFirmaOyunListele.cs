@@ -25,7 +25,7 @@ namespace AkaStormProje
             panFiltre.Visible = false;
             oyunYonetici.OyunListele(dataGridView1);
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            DatagridSecim();
+            //DatagridSecim();
             oyunYonetici.KategoriDoldur(cmbKategoriFiltre);
             cmbGenel.SelectedIndex = 0;
             cmbFiyat1.SelectedIndex = 0;

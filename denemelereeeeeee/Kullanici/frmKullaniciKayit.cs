@@ -307,13 +307,16 @@ namespace AkaStormProje
                 kullanici.getKullaniciKulAdi = txtKullaniciAdi.Text;
                 kullanici.getKullaniciSifre = txtSifre.Text;
 
-                if(kullaniciYonetici.KayitOl(kullanici) == true)
+                if (kullaniciYonetici.HesapKontrol(kullanici) == true)
                 {
-                    if (kullaniciYonetici.Giris(kullanici) == true)
+                    if (kullaniciYonetici.KayitOl(kullanici) == true)
                     {
-                        frmKullaniciAnasayfa frmKullaniciAnasayfa = new frmKullaniciAnasayfa();
-                        frmKullaniciAnasayfa.Show();
-                        this.Hide();
+                        if (kullaniciYonetici.Giris(kullanici) == true)
+                        {
+                            frmKullaniciAnasayfa frmKullaniciAnasayfa = new frmKullaniciAnasayfa();
+                            frmKullaniciAnasayfa.Show();
+                            this.Hide();
+                        }
                     }
                 }
             }

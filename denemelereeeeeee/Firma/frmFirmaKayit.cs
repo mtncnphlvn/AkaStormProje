@@ -209,13 +209,16 @@ namespace AkaStormProje
                 firma.getFirmaTelefon = txtTelefonNo.Text;
                 firma.getFirmaSifre = txtSifre.Text;
 
-                if(firmaYonetici.KayitOl(firma)== true)
+                if (firmaYonetici.HesapKontrol(firma) == true)
                 {
-                    if (firmaYonetici.Giris(firma) == true)
+                    if (firmaYonetici.KayitOl(firma) == true)
                     {
-                        frmFirmaAnasayfa frmFirmaAnasayfa = new frmFirmaAnasayfa();
-                        frmFirmaAnasayfa.Show();
-                        this.Hide();
+                        if (firmaYonetici.Giris(firma) == true)
+                        {
+                            frmFirmaAnasayfa frmFirmaAnasayfa = new frmFirmaAnasayfa();
+                            frmFirmaAnasayfa.Show();
+                            this.Hide();
+                        }
                     }
                 }
                 

@@ -8,7 +8,7 @@ namespace AkaStormProje
 {
     class Oyun
     {
-        public static int oyunID = 0;
+        public static int oyunID;
         private string oyunAdi;
         private string oyunKonusu;
         private int oyunKategori;

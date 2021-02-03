@@ -8,7 +8,7 @@ namespace AkaStormProje
 {
     class Kullanici
     {
-        public static int kullaniciID = 24;
+        public static int kullaniciID;
         private string kullaniciAdi;
         private string kullaniciSoyadi;
         private string kullaniciKulAdi;

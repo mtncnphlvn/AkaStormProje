@@ -27,7 +27,7 @@ namespace AkaStormProje
             dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 10);
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             panFiltre.Visible = false;
-            DatagridSecim();
+            //DatagridSecim();
             oyunYonetici.KategoriDoldur(cmbKategoriFiltre);
             cmbGenel.SelectedIndex = 0;
 

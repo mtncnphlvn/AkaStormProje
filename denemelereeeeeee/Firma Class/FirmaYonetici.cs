@@ -70,6 +70,34 @@ namespace AkaStormProje
             }
             return giris;
         }
+        public bool HesapKontrol(Firma firma)
+        {
+
+            bool giris = false;
+            try
+            {
+                string sorgu = "select * from firma where firma_eposta='" + firma.getFirmaEposta + "'";
+                MySqlCommand komut = new MySqlCommand(sorgu, veritabaniYonetici.OpenConnection());
+                MySqlDataReader reader;
+                reader = komut.ExecuteReader();
+                if (reader.Read())
+                {
+                    giris = false;
+                    MessageBox.Show("Firma sisteme kayıtlı");
+                }
+                else
+                {
+                    giris = true;
+                }
+                veritabaniYonetici.CloseConnection();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata var : ", ex.Message);
+            }
+            return giris;
+        }
         public void ResimGuncelle(string resim, Label label)
         {
             string sorgu = "update firma_resim set firma_resim='" + MySql.Data.MySqlClient.MySqlHelper.EscapeString(resim) + "' where firma_id='"+Firma.firmaID+"'";

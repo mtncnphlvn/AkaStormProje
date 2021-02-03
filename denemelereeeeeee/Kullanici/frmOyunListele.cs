@@ -31,7 +31,7 @@ namespace AkaStormProje
             cmbGenel.SelectedIndex = 0;
             cmbFiyat1.SelectedIndex = 0;
             cmbFiyat2.SelectedIndex = 0;
-            DatagridSecim();
+            //DatagridSecim();
 
         }
         public void DatagridSecim()
